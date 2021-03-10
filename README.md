@@ -12,3 +12,7 @@ When in file dialog, focus on the edit control, and press Ctrl+E to jump to the 
 Need AutoHotkey v2.
 * [SizeColByEverything](SizeColByEverything/README.zh-Hans.md)  
 Add a size column which retrieves sizes of files and folders from Everything.
+
+## See Also
+* [IbDOpusExt](https://github.com/Chaoses-Ib/IbDOpusExt)
+* [laoqiuqiu/DOpus-Script](https://github.com/laoqiuqiu/DOpus-Script)
