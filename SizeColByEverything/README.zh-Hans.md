@@ -4,7 +4,7 @@
 Git：https://github.com/Chaoses-Ib/IbDOpusScripts  
 
 ## 功能
-为 DO 添加一个 Size 列，通过 Everything 获取文件和文件夹的大小。
+为 DO 添加一个 Size 列，通过 Everything 获取文件和文件夹的大小。  
 ![Preview](Preview.png)
 
 ## 已知问题
