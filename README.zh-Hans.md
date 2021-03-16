@@ -10,7 +10,7 @@
 * [DialogJumpToListerPath](DialogJumpToListerPath.ahk2)（对话框跳转）  
 在文件对话框的编辑框中按 Ctrl+E，跳转到 DOpus 最后激活的文件夹。  
 需要 AutoHotkey v2。
-* [PasteInto](PasteInto.js)（粘贴进去）
+* [PasteInto](PasteInto.js)（粘贴进去）  
 把文件粘贴进每个选中的文件夹。
 * [SizeColByEverything](SizeColByEverything/README.zh-Hans.md)（Ev 尺寸列）  
 为 DO 添加一个 Size 列，通过 Everything 获取文件和文件夹的大小。

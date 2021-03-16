@@ -10,7 +10,7 @@ If there's only one tab, close the lister, otherwise close current tab.
 * [DialogJumpToListerPath](DialogJumpToListerPath.ahk2)  
 When in file dialog, focus on the edit control, and press Ctrl+E to jump to the last actived folder of listers.  
 Need AutoHotkey v2.
-* [PasteInto](PasteInto.js)
+* [PasteInto](PasteInto.js)  
 Paste files into every selected folder.
 * [SizeColByEverything](SizeColByEverything/README.zh-Hans.md)  
 Add a size column which retrieves sizes of files and folders from Everything.
