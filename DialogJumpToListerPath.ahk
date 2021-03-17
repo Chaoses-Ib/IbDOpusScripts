@@ -1,5 +1,5 @@
 ; DialogJumpToListerPath
-; Description: When in file dialog, focus on the edit control, and press Ctrl+E to jump to the last actived folder of listers.
+; Description: When in file dialog, focus on the edit control, and press Ctrl+E to jump to the last actived folder of listers. (AHK v2)
 ; Author: Chaoses Ib
 ; Version: 210310
 ; Git: https://github.com/Chaoses-Ib/IbDOpusScripts
