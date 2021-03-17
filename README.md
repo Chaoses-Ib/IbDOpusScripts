@@ -15,6 +15,9 @@ Paste files into every selected folder.
 * [SizeColByEverything](SizeColByEverything/README.zh-Hans.md)  
 Add a size column which retrieves sizes of files and folders from Everything.
 
+## Rename Scripts
+See [Rename Scripts](Rename%20Scripts/README.md).
+
 ## See Also
 * [IbDOpusExt](https://github.com/Chaoses-Ib/IbDOpusExt)
 * [laoqiuqiu/DOpus-Script](https://github.com/laoqiuqiu/DOpus-Script)

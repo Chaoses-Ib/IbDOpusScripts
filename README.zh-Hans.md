@@ -15,6 +15,9 @@
 * [SizeColByEverything](SizeColByEverything/README.zh-Hans.md)（Ev 尺寸列）  
 为 DO 添加一个 Size 列，通过 Everything 获取文件和文件夹的大小。
 
+## 重命名脚本
+见 [重命名脚本](Rename%20Scripts/README.zh-Hans.md)。
+
 ## 相关推荐
 * [IbDOpusExt](https://github.com/Chaoses-Ib/IbDOpusExt)
 * [laoqiuqiu/DOpus-Script](https://github.com/laoqiuqiu/DOpus-Script)
