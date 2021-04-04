@@ -8,7 +8,7 @@ Extract selected archive to subfolder if there's more than one file under the ro
 * [CloseTabOrLister](CloseTabOrLister.js)  
 If there's only one tab, close the lister, otherwise close current tab.
 * [DialogJumpToListerPath](DialogJumpToListerPath.ahk)  
-When in file dialog, focus on the edit control, and press Ctrl+E to jump to the last actived folder of listers. (Need AutoHotkey v2)
+When in file dialog, focus on the editor, and press Ctrl+E to jump to the last actived folder of listers. If Ctrl+E not work, type "//cur " to trigger it. (Need AutoHotkey v2)
 * [PasteInto](PasteInto.js)  
 Paste files into every selected folder.
 * [SizeColByEverything](SizeColByEverything/README.zh-Hans.md)  
