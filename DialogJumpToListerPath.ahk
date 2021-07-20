@@ -14,7 +14,16 @@ DOpus_SendPath(){
 	RegExMatch(paths, '<path active_lister="1" [^>]* tab_state="1">([^<]*)' , Match)
 	if(!Match)
 		return
-	Send "{Text}" Match[1] "`n"
+	
+	clipboard := ClipboardAll()
+	A_Clipboard := Match[1]
+	Send "+{Insert}`n"  ;or ^v
+	Sleep 200
+	A_Clipboard := clipboard
+	clipboard := ""
+	
+	;Send "{Text}" Match[1] "`n"
+	;incompatible with some input methods (Sogou Pinyin)
 }
 
 #HotIf WinActive("ahk_class #32770")  ;File dialog
