@@ -1,3 +1,8 @@
+//EventViewers.OnViewerEvent
+//Author: Chaoses Ib
+//Version: 210728
+//Git: https://github.com/Chaoses-Ib/IbDOpusScripts
+
 function OnViewerEvent(viewerEventData){
     info = "OnViewerEvent: " + viewerEventData.event
     if (viewerEventData.viewer.current)
