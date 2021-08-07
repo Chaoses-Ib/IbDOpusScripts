@@ -3,6 +3,8 @@
 版本：210310  
 Git：https://github.com/Chaoses-Ib/IbDOpusScripts  
 
+只作参考用途，请使用 [IbDOpusExt](https://github.com/Chaoses-Ib/IbDOpusExt) 的尺寸列替代。
+
 ## 功能
 为 DO 添加一个 Size 列，通过 Everything 获取文件和文件夹的大小。  
 ![Preview](Preview.png)

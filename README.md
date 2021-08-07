@@ -14,7 +14,7 @@ Output script event information. Useful for developing scripts.
 * [PasteInto](PasteInto.js)  
 Paste files into every selected folder.
 * [SizeColByEverything](SizeColByEverything/README.zh-Hans.md)  
-Add a size column which retrieves sizes of files and folders from Everything.
+Add a size column which retrieves sizes of files and folders from Everything. (This script is for reference only. Use [IbDOpusExt](https://github.com/Chaoses-Ib/IbDOpusExt)'s Size column instead.)
 
 ## Rename Scripts
 See [Rename Scripts](Rename%20Scripts/README.md).

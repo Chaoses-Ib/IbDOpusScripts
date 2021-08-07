@@ -1,7 +1,7 @@
 //SizeColByEvetyhing
-//Description: Add a size column which retrieves sizes of files and folders from Everything.
+//Description: Add a size column which retrieves sizes of files and folders from Everything. (This script is for reference only. Use [IbDOpusExt](https://github.com/Chaoses-Ib/IbDOpusExt)'s Size column instead.)
 //Author: Chaoses Ib
-//Version: 210310
+//Version: 210807
 //Git: https://github.com/Chaoses-Ib/IbDOpusScripts
 
 var cacheQuery = "";
