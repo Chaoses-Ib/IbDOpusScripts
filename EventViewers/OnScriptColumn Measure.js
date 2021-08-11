@@ -1,6 +1,6 @@
 //EventViewers.OnScriptColumn Measure
 //Author: Chaoses Ib
-//Version: 210807
+//Version: 210811
 //Git: https://github.com/Chaoses-Ib/IbDOpusScripts
 
 function OnAddColumns(addColData){
@@ -22,28 +22,37 @@ function f(scriptColData){
 }
 
 function OnMyScriptColumn(scriptColData){
-    vars = scriptColData.tab.vars
+    var vars = scriptColData.tab.vars
     if (!vars.Exists("Measure.count")){
         vars.Set("Measure.count", 0)
     }
     var count = vars.Get("Measure.count") + 1
+    vars.Set("Measure.count", count)
     if (count == 1){
-        vars.Set("Measure.total", scriptColData.tab.all.count)  //for the sake of performance
-        time = +new Date()
+        var time = +new Date()
+        vars.Set("Measure.timeBegin", time)
         DOpus.Output(time + ", first, " + scriptColData.item.name)
-        vars.Set("Measure.time", time)
     }
 
     f(scriptColData)
     
-    var total = vars.Get("Measure.total")
-    if (count >= total){
-        time = +new Date()
-        duration = time - vars.Get("Measure.time")
-        DOpus.Output(time + ", last, "
-            + duration + "ms/" + total + " = " + (duration/total).toFixed(2) + "ms, "
-            + scriptColData.item.name)
-        count = 0
+    var time = +new Date()
+    vars.Set("Measure.timeLast", time)
+}
+
+function OnActivateLister(activateListerData){
+    if(activateListerData.active == false){
+        var tab = activateListerData.lister.activetab
+        var vars = tab.vars
+        if(vars.Exists("Measure.count")){
+            var count = vars.Get("Measure.count")
+            if(count != 0){
+                var timeLast = vars.Get("Measure.timeLast")
+                duration = timeLast - vars.Get("Measure.timeBegin")
+                DOpus.Output(timeLast + ", " + duration + "ms/" + count + " = " + (duration/count).toFixed(2) + "ms")
+
+                vars.Set("Measure.count", 0)
+            }
+        }
     }
-    vars.Set("Measure.count", count)
 }
