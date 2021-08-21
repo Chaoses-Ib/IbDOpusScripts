@@ -1,6 +1,6 @@
-//EventViewers.OnViewerEvent
+//EventWatchers.OnViewerEvent
 //Author: Chaoses Ib
-//Version: 210728
+//Version: 210821
 //Git: https://github.com/Chaoses-Ib/IbDOpusScripts
 
 function OnViewerEvent(viewerEventData){

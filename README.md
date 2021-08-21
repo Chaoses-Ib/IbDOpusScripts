@@ -9,8 +9,8 @@ Extract selected archive to subfolder if there's more than one file under the ro
 If there's only one tab, close the lister, otherwise close current tab. (This script is for reference only. A better way to implement it is to turn on "Lister closes when last tab closes" under Preferences/Folder Tabs/Options.)
 * [DialogJumpToListerPath](DialogJumpToListerPath.ahk)  
 When in file dialog, focus on the editor, and press Ctrl+E to jump to the last actived folder of listers. If Ctrl+E not work, type "//cur " to trigger it. (Need AutoHotkey v2)
-* [EventViewers](EventViewers)  
-Output script event information. Useful for developing scripts.
+* [EventWatchers](EventWatchers)  
+Output script event information when the event is triggered. Useful for developing scripts.
 * [PasteInto](PasteInto.js)  
 Paste files into every selected folder.
 * [SizeColByEverything](SizeColByEverything/README.zh-Hans.md)  

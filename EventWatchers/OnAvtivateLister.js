@@ -1,6 +1,6 @@
-//EventViewers.OnActivateLister
+//EventWatchers.OnActivateLister
 //Author: Chaoses Ib
-//Version: 210811
+//Version: 210821
 //Git: https://github.com/Chaoses-Ib/IbDOpusScripts
 
 function OnActivateLister(activateListerData){

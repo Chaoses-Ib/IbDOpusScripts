@@ -1,6 +1,6 @@
-//EventViewers.OnAddColumns & OnScriptColumn
+//EventWatchers.OnAddColumns & OnScriptColumn
 //Author: Chaoses Ib
-//Version: 210731
+//Version: 210821
 //Git: https://github.com/Chaoses-Ib/IbDOpusScripts
 
 function OnAddColumns(addColData){

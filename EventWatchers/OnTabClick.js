@@ -1,6 +1,6 @@
-//EventViewers.OnTabClick
+//EventWatchers.OnTabClick
 //Author: Chaoses Ib
-//Version: 210811
+//Version: 210821
 //Git: https://github.com/Chaoses-Ib/IbDOpusScripts
 
 function OnTabClick(tabClickData){

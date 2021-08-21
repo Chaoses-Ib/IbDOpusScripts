@@ -9,8 +9,8 @@
 关闭当前标签页，如果只剩一个，就直接关闭窗口。（只作参考用途，更好的实现方式是勾选 配置/文件夹标签/选项 下的“关闭最后一个标签时同时关闭窗口”。）
 * [DialogJumpToListerPath](DialogJumpToListerPath.ahk)（对话框跳转）  
 在文件对话框的编辑框中按 Ctrl+E，跳转到 DOpus 最近激活的文件夹。如果 Ctrl+E 用不了，输入“//cur ”来触发。（需要 AutoHotkey v2）
-* [EventViewers](EventViewers)（查看脚本事件）  
-输出脚本事件信息，方便开发脚本。
+* [EventWatchers](EventWatchers)（查看脚本事件）  
+触发脚本事件时输出事件信息，有助于脚本开发。
 * [PasteInto](PasteInto.js)（粘贴进去）  
 把文件粘贴进每个选中的文件夹。
 * [SizeColByEverything](SizeColByEverything/README.zh-Hans.md)（Ev 尺寸列）  
