@@ -11,6 +11,8 @@ If there's only one tab, close the lister, otherwise close current tab. (This sc
 When in file dialog, focus on the editor, and press Ctrl+E to jump to the last actived folder of listers. If Ctrl+E not work, type "//cur " to trigger it. (Need AutoHotkey v2)
 * [EventWatchers](EventWatchers)  
 Output script event information when the event is triggered. Useful for developing scripts.
+* [ObjectViewers](ObjectViewers)  
+Output script object information. Useful for developing scripts.
 * [PasteInto](PasteInto.js)  
 Paste files into every selected folder.
 * [SizeColByEverything](SizeColByEverything/README.zh-Hans.md)  
