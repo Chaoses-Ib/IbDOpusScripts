@@ -1,7 +1,7 @@
 ; DialogJumpToListerPath
 ; Description: When in file dialog, focus on the editor, and press Ctrl+E to jump to the last actived folder of listers. If Ctrl+E not work, type "//cur " to trigger it. (AHK v2)
 ; Author: Chaoses Ib
-; Version: 210720
+; Version: 210831
 ; Git: https://github.com/Chaoses-Ib/IbDOpusScripts
 
 dopusrt := StrReplace(WinGetProcessPath("ahk_exe dopus.exe"), "dopus.exe", "dopusrt.exe")  ;WinGetProcessPath requires the target to have a window
@@ -11,7 +11,7 @@ DOpus_SendPath(){
 	global dopusrt
 	RunWait dopusrt " /info " A_Temp "\DOpus_pathlist.txt,paths"
 	paths := FileRead(A_Temp "\DOpus_pathlist.txt")
-	RegExMatch(paths, '<path active_lister="1" [^>]* tab_state="1">([^<]*)' , Match)
+	RegExMatch(paths, '<path active_lister="1" [^>]* tab_state="1">([^<]*)' , &Match)
 	if(!Match)
 		return
 	
