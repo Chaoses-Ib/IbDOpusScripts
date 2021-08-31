@@ -1,5 +1,5 @@
 ; DialogJump
-; Description: When in file dialog, focus on the editor, and press Ctrl+E to jump to the last actived folder of listers. If Ctrl+E not work, type "//cur " to trigger it. (AHK v2)
+; Description: When in the editor of the file dialog, press Ctrl+G to jump to the last activated folder of listers. If Ctrl+G does not work, type "//cur " to trigger it. (AHK v2)
 ; Author: Chaoses Ib
 ; Version: 210831
 ; Git: https://github.com/Chaoses-Ib/IbDOpusScripts
@@ -27,7 +27,7 @@ DOpus_SendPath(){
 }
 
 #HotIf WinActive("ahk_class #32770")  ;File dialog
-^e::DOpus_SendPath()
+^g::DOpus_SendPath()
 #HotIf
 
 #Hotstring EndChars `n `t
