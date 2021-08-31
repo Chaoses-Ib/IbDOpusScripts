@@ -7,7 +7,7 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/).
 Extract selected archive to subfolder if there's more than one file under the root path, otherwise (only one file) extract it directly.
 * [CloseTabOrLister](CloseTabOrLister.js)  
 If there's only one tab, close the lister, otherwise close current tab. (This script is for reference only. A better way to implement it is to turn on "Lister closes when last tab closes" under Preferences/Folder Tabs/Options.)
-* [DialogJumpToListerPath](DialogJumpToListerPath.ahk)  
+* [DialogJump](DialogJump.ahk)  
 When in file dialog, focus on the editor, and press Ctrl+E to jump to the last actived folder of listers. If Ctrl+E not work, type "//cur " to trigger it. (Need AutoHotkey v2)
 * [EventWatchers](EventWatchers)  
 Output script event information when the event is triggered. Useful for developing scripts.

@@ -1,4 +1,4 @@
-; DialogJumpToListerPath
+; DialogJump
 ; Description: When in file dialog, focus on the editor, and press Ctrl+E to jump to the last actived folder of listers. If Ctrl+E not work, type "//cur " to trigger it. (AHK v2)
 ; Author: Chaoses Ib
 ; Version: 210831
