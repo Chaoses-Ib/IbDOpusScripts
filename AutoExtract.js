@@ -6,23 +6,23 @@
 //Git: https://github.com/Chaoses-Ib/IbDOpusScripts
 function OnClick(clickData)
 {
-	var tab = clickData.func.sourcetab;
-	var fsutil = DOpus.FSUtil;
-	var cmd = clickData.func.command;
-	for (var eSel = new Enumerator(tab.selected); !eSel.atEnd(); eSel.moveNext())
-	{
-		var zipEnum = fsutil.ReadDir(eSel.item().RealPath);
+    var tab = clickData.func.sourcetab;
+    var fsutil = DOpus.FSUtil;
+    var cmd = clickData.func.command;
+    for (var eSel = new Enumerator(tab.selected); !eSel.atEnd(); eSel.moveNext())
+    {
+        var zipEnum = fsutil.ReadDir(eSel.item().RealPath);
 
-		//There's no count field
-		var count = 0;
-		for(; !zipEnum.complete; zipEnum.Next)
-			count++;
-		//DOpus.Output(count);
+        //There's no count field
+        var count = 0;
+        for(; !zipEnum.complete; zipEnum.Next)
+            count++;
+        //DOpus.Output(count);
 
-		if(count < 2)
-			cmd.RunCommand("Copy EXTRACT HERE");
-		else
-			cmd.RunCommand("Copy EXTRACT=sub HERE");
-	}
-	return;
+        if(count < 2)
+            cmd.RunCommand("Copy EXTRACT HERE");
+        else
+            cmd.RunCommand("Copy EXTRACT=sub HERE");
+    }
+    return;
 }

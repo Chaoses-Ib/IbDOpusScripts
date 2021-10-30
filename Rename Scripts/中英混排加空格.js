@@ -8,11 +8,11 @@ function OnGetNewName(getNewNameData)
 {
     var name = getNewNameData.newname_stem_m
     
-	var dict = [ '[a-z\\-0-9]{2}', 'C\\+\\+', '[CF]#' ]
+    var dict = [ '[a-z\\-0-9]{2}', 'C\\+\\+', '[CF]#' ]
     for (var i = 0; i < dict.length; i++) {
         name = name.replace(new RegExp('([〇㐀-鿭-礼])(' + dict[i] + ')', 'ig'), '$1 $2')
         name = name.replace(new RegExp(dict[i] + '(?=[〇㐀-鿭-礼])', 'ig'), '$& ')
     }
     
-	return name + getNewNameData.newname_ext_m
+    return name + getNewNameData.newname_ext_m
 }

@@ -20,46 +20,46 @@ DWX.Register(path, "Everything_GetResultFileNameW", "i=u", "r=w");
 
 function OnInit(initData)
 {
-	initData.name = "SizeColFromEverything";
-	initData.version = "1.0";
-	initData.copyright = "混沌 Ib";
-	initData.desc = "";
-	initData.default_enable = true;
-	initData.min_version = "12.0";
-	
-	var col = initData.AddColumn();
-	col.name = "Size_ev";
-	col.method = "OnSize_ev";
-	col.label = "Size (ev)";
-	col.justify = "left";
-	col.autogroup = true;
-	col.type = "size";
+    initData.name = "SizeColFromEverything";
+    initData.version = "1.0";
+    initData.copyright = "混沌 Ib";
+    initData.desc = "";
+    initData.default_enable = true;
+    initData.min_version = "12.0";
+    
+    var col = initData.AddColumn();
+    col.name = "Size_ev";
+    col.method = "OnSize_ev";
+    col.label = "Size (ev)";
+    col.justify = "left";
+    col.autogroup = true;
+    col.type = "size";
 }
 
 function OnSize_ev(scriptColData)
 {
-	var tabPath = String(scriptColData.tab.path);
-	if(cacheQuery != tabPath) evQuery(tabPath);
-	if(cacheMap.exists(scriptColData.item.name))
-		scriptColData.value = cacheMap(scriptColData.item.name);
+    var tabPath = String(scriptColData.tab.path);
+    if(cacheQuery != tabPath) evQuery(tabPath);
+    if(cacheMap.exists(scriptColData.item.name))
+        scriptColData.value = cacheMap(scriptColData.item.name);
 }
 
 function evQuery(tabPath){
-		DOpus.Output("Init");
-	cacheMap.clear(); //最短存活
-	DWX.Everything_SetSearchW('infolder:"' + tabPath +'"');
-		//DOpus.Output('infolder:"' + tabPath +'"')
-	DWX.Everything_SetRequestFlags(1+16);
-	if(!DWX.Everything_QueryW(1)) return;
-	
-	var num = DWX.Everything_GetNumResults();
-		//DOpus.Output(DWX.Everything_GetLastError() + ", " + num);
-	var size_addr = DWX.MemAlloc(16); //最短存活
-	for(var i=0; i<num; i++){
-		var name = DWX.Everything_GetResultFileNameW(i);
-		DWX.Everything_GetResultSize(i, size_addr);
-		cacheMap(name) = DWX.NumGet(size_addr, 0, "q");
-	}
-	DWX.MemFree(size_addr);
-	cacheQuery = tabPath;
+        DOpus.Output("Init");
+    cacheMap.clear(); //最短存活
+    DWX.Everything_SetSearchW('infolder:"' + tabPath +'"');
+        //DOpus.Output('infolder:"' + tabPath +'"')
+    DWX.Everything_SetRequestFlags(1+16);
+    if(!DWX.Everything_QueryW(1)) return;
+    
+    var num = DWX.Everything_GetNumResults();
+        //DOpus.Output(DWX.Everything_GetLastError() + ", " + num);
+    var size_addr = DWX.MemAlloc(16); //最短存活
+    for(var i=0; i<num; i++){
+        var name = DWX.Everything_GetResultFileNameW(i);
+        DWX.Everything_GetResultSize(i, size_addr);
+        cacheMap(name) = DWX.NumGet(size_addr, 0, "q");
+    }
+    DWX.MemFree(size_addr);
+    cacheQuery = tabPath;
 }
