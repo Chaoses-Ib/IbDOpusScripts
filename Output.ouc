@@ -6,6 +6,7 @@
 	<function type="script">
 		<instruction>@script JScript</instruction>
 		<instruction>// Output</instruction>
+		<instruction>// e.g. Output &quot;sourcepath: {sourcepath}&quot;</instruction>
 		<instruction>// Version: 211125</instruction>
 		<instruction>// Repo: https://github.com/Chaoses-Ib/IbDOpusScripts</instruction>
 		<instruction />
