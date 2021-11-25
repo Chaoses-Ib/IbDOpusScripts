@@ -7,6 +7,9 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/).
 Extract selected archive to subfolder if there's more than one file under the root path, otherwise (only one file) extract it directly.
 * [DialogJump](DialogJump.ahk)  
 When in the editor of the file dialog, press Ctrl+G to jump to the last activated folder of listers. If Ctrl+G does not work, type "//cur " to trigger it. (Download the executable file from [Releases](../../releases) if you do not have [AutoHotkey v2](https://www.autohotkey.com/v2/))
+* [Output](Output.ouc)  
+Add Output command, which is able to output text to script log.  
+e.g. `Output "sourcepath: {sourcepath}"`
 * [PasteInto](PasteInto.js)  
 Paste files into every selected folder.
 

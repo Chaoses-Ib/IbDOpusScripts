@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<usercommand backcol="none" hide_from_menu="no" textcol="none">
+	<label>Output</label>
+	<template>TEXT/R</template>
+	<icon1>#usercommand</icon1>
+	<function type="script">
+		<instruction>@script JScript</instruction>
+		<instruction>// Output</instruction>
+		<instruction>// Version: 211125</instruction>
+		<instruction>// Repo: https://github.com/Chaoses-Ib/IbDOpusScripts</instruction>
+		<instruction />
+		<instruction>function OnClick(clickData)</instruction>
+		<instruction>{</instruction>
+		<instruction>	clickData.func.command.RunCommand(&quot;Set UTILITY=otherlog&quot;);</instruction>
+		<instruction>	DOpus.Output(clickData.func.args.TEXT);</instruction>
+		<instruction>}</instruction>
+	</function>
+</usercommand>
