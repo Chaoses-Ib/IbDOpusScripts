@@ -1,6 +1,6 @@
 //EventWatchers.OnAddColumns & OnScriptColumn
 //Author: Chaoses Ib
-//Version: 210821
+//Version: 211202
 //Git: https://github.com/Chaoses-Ib/IbDOpusScripts
 
 function OnAddColumns(addColData){
@@ -16,6 +16,8 @@ function OnAddColumns(addColData){
 
 function OnMyScriptColumn(scriptColData){
     DOpus.Output("OnMyScriptColumn: " + +new Date() + ", " + scriptColData.item.name)
+    // item:
+    //   realpath: symbolic links and junctions are not reparsed
     scriptColData.value =
         (scriptColData.item.is_dir ? "d" : "f")
         + (scriptColData.item.is_reparse ? "r" : "")
