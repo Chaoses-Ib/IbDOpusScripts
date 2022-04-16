@@ -1,6 +1,6 @@
 # IbDOpusScripts
 语言：[English](README.md)，[简体中文](README.zh-Hans.md)  
-一些 [Directory Opus](https://www.gpsoft.com.au/) 的脚本。
+一些 [Directory Opus](https://github.com/Chaoses-Ib/DirectoryOpus) 的脚本。
 
 ## 脚本
 * [AutoExtract](AutoExtract.js)（自动解压）  

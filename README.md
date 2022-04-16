@@ -1,6 +1,6 @@
 # IbDOpusScripts
 Languages: [English](README.md), [简体中文](README.zh-Hans.md)  
-Some scripts for [Directory Opus](https://www.gpsoft.com.au/).
+Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](https://github.com/Chaoses-Ib/DirectoryOpus)).
 
 ## Scripts
 * [AutoExtract](AutoExtract.js)  
