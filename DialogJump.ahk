@@ -1,14 +1,16 @@
 ; DialogJump
 ; Description: When in the editor of the file dialog, press Ctrl+G to jump to the last activated folder of listers. If Ctrl+G does not work, type "//cur " to trigger it. (AHK v2)
 ; Author: Chaoses Ib
-; Version: 220519
+; Version: 220519.2
 ; Git: https://github.com/Chaoses-Ib/IbDOpusScripts
 
-dopusrt := StrReplace(WinGetProcessPath("ahk_exe dopus.exe"), "dopus.exe", "dopusrt.exe")  ;WinGetProcessPath requires the target to have a window
-;A_ProgramFiles . "\GPSoftware\Directory Opus\dopusrt.exe"
+dopusrt := GetDOpusRT()
 
 DOpus_SendPath(){
     global dopusrt
+    if (dopusrt == "")
+        dopusrt := GetDOpusRT()
+
     if (A_IsAdmin) {
         ; running DOpusRT as elevated can't get the result
         FileDelete(A_Temp "\DOpus_pathlist.txt")
@@ -41,6 +43,16 @@ DOpus_SendPath(){
 
 #Hotstring EndChars `n `t
 :OX://cur::DOpus_SendPath()
+
+GetDOpusRT(){
+    try
+        return StrReplace(WinGetProcessPath("ahk_exe dopus.exe"), "dopus.exe", "dopusrt.exe")
+    catch TargetError
+        ; WinGetProcessPath requires the target to have a window
+        return ""
+    
+    ;return A_ProgramFiles . "\GPSoftware\Directory Opus\dopusrt.exe"
+}
 
 ; From Bluesmaster, https://www.autohotkey.com/board/topic/72812-run-as-standard-limited-user/?p=670991
 RunAsUnelevated(prms*){
