@@ -1,7 +1,7 @@
 ; DialogJump
 ; Description: When in the editor of the file dialog, press Ctrl+G to jump to the last activated folder of listers. If Ctrl+G does not work, type "//cur " to trigger it. (AHK v2)
 ; Author: Chaoses Ib
-; Version: 210831
+; Version: 220519
 ; Git: https://github.com/Chaoses-Ib/IbDOpusScripts
 
 dopusrt := StrReplace(WinGetProcessPath("ahk_exe dopus.exe"), "dopus.exe", "dopusrt.exe")  ;WinGetProcessPath requires the target to have a window
@@ -9,7 +9,16 @@ dopusrt := StrReplace(WinGetProcessPath("ahk_exe dopus.exe"), "dopus.exe", "dopu
 
 DOpus_SendPath(){
     global dopusrt
-    RunWait dopusrt " /info " A_Temp "\DOpus_pathlist.txt,paths"
+    if (A_IsAdmin) {
+        ; running DOpusRT as elevated can't get the result
+        FileDelete(A_Temp "\DOpus_pathlist.txt")
+        RunAsUnelevated(dopusrt, "/info " A_Temp "\DOpus_pathlist.txt,paths")
+        while !FileExist(A_Temp "\DOpus_pathlist.txt") {
+            Sleep(20)
+        }
+    } else {
+        RunWait dopusrt " /info " A_Temp "\DOpus_pathlist.txt,paths"
+    }
     paths := FileRead(A_Temp "\DOpus_pathlist.txt")
     RegExMatch(paths, '<path active_lister="1" [^>]* tab_state="1">([^<]*)' , &Match)
     if(!Match)
@@ -32,3 +41,8 @@ DOpus_SendPath(){
 
 #Hotstring EndChars `n `t
 :OX://cur::DOpus_SendPath()
+
+; From Bluesmaster, https://www.autohotkey.com/board/topic/72812-run-as-standard-limited-user/?p=670991
+RunAsUnelevated(prms*){
+    ComObject("Shell.Application").Windows.FindWindowSW(0, 0, 8, 0, 1 ).Document.Application.ShellExecute(prms*)
+}
