@@ -1,7 +1,10 @@
 ﻿// EncodingConvert
 // Authors: @Chaoses-Ib, @laoqiuqiu
-// Version: 220619
+// Version: 220619.2
 // Homepage: https://github.com/Chaoses-Ib/IbDOpusScripts
+
+// Use in command:
+// Rename PRESET="EncodingConvert" SCRIPTARG srcEncoding:1 dstEncoding:3
 
 var encodings = ['utf-8', 'gbk', 'big5', 'shift-jis', 'euc-kr'];
 
