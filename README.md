@@ -28,6 +28,7 @@ Add a size column which retrieves sizes of files and folders from Everything. (T
 ## Rename Scripts
 * [PercentDecode](Rename%20Scripts/PercentDecode.js)  
   Decode percent-encoding (URL encoding).
+* [EncodingConvert](Rename%20Scripts/EncodingConvert.js)
 * [中英混排加空格](Rename%20Scripts/中英混排加空格.js)  
   在汉字和英文单词间添加空格。
 
