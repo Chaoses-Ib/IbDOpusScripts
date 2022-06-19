@@ -28,7 +28,8 @@
 ## 重命名脚本
 * [PercentDecode](Rename%20Scripts/PercentDecode.js)（百分号解码）  
   解码百分号编码（URL编码）。
-* [EncodingConvert](Rename%20Scripts/EncodingConvert.js)（编码转换）
+* [EncodingConvert](Rename%20Scripts/EncodingConvert.js)（编码转换）  
+  ![](Rename%20Scripts/images/EncodingConvert.zh-Hans.png)
 * [中英混排加空格](Rename%20Scripts/中英混排加空格.js)  
   在汉字和英文单词间添加空格。
 
