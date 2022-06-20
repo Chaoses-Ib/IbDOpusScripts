@@ -1,7 +1,7 @@
 ' 中文数字转阿拉伯数字-WSQL（中文改数字）
 ' 将中文读法改成阿拉伯数字，如一百二十三改成123，四十五改成45
-' 作者：WSQL
-' 版本：220619
+' 作者：WSQL, @laoqiuqiu
+' 版本：220620
 ' 主页：https://github.com/Chaoses-Ib/IbDOpusScripts
 
 Function OnGetNewName(ByRef getNewNameData)
@@ -63,6 +63,7 @@ End Function
 Function ConverToDigit(cnNumber)
     result = 0
     temp = 0
+    cnNumber = FixChs(cnNumber)
     For c = 1 To len(cnNumber)
         temp2 = Mid(cnNumber, c, 1)
         temp1 = ToDigit(temp2)
@@ -82,4 +83,21 @@ Function ConverToDigit(cnNumber)
     Next
     result = result + temp
     ConverToDigit = result
+End Function
+
+'修正二百五，三万三的情况
+'@laoqiuqiu
+Function FixChs(cnNumber)
+	Dim LU, SLU
+	LU = ToDigit(Right(cnNumber,1))
+	SLU = ToDigit(Left(Right(cnNumber,2),1))
+	FixChs = cnNumber
+	If (SLU > 10) And (LU < 10) Then
+		Select Case SLU
+			Case 100       : FixChs = cnNumber & "十"
+			Case 1000      : FixChs = cnNumber & "百"
+			Case 10000     : FixChs = cnNumber & "千"
+			Case 100000000 : FixChs = cnNumber & "千万"
+		End Select
+	End If
 End Function
