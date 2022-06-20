@@ -1,24 +1,30 @@
 ' 中文数字转阿拉伯数字-WSQL（中文改数字）
 ' 将中文读法改成阿拉伯数字，如一百二十三改成123，四十五改成45
-' 作者：WSQL, @laoqiuqiu
-' 版本：220620
+' 作者：WSQL, @laoqiuqiu, @Chaoses-Ib
+' 版本：220620.2
 ' 主页：https://github.com/Chaoses-Ib/IbDOpusScripts
 
+Function OnGetCustomFields(ByRef getFieldData)
+    '@Chaoses-Ib
+    getFieldData.Fields.onlyFirstNum = True
+    getFieldData.field_labels("onlyFirstNum") = "只转换第一段数字"
+End Function
+
 Function OnGetNewName(ByRef getNewNameData)
-    Set Item = getNewNameData.Item
-	'正则表达式判断是不是中文读法，不够严谨
-    Dim Reg
-    Set Reg = CreateObject("vbscript.regexp")
-    Reg.Pattern = "[一二三四五六七八九十百千万零]{1,}" '正则表达式
-    Set Match = Reg.Execute(Item.name_stem)
-	'当匹配数=1时就改名
-    If Match.Count = 1 Then
-	   
-	   OnGetNewName=Replace(Item.name_stem,Match.Item(0).Value,ConverToDigit(Match.Item(0).Value)) & Item.ext
-	else
-		OnGetNewName=true
-    End If
+    Set item = getNewNameData.Item
+    newName = item.name_stem
+
+    '正则表达式判断是不是中文读法，不够严谨
+    Dim reg
+    Set reg = CreateObject("vbscript.regexp")
+    reg.Pattern = "[一二三四五六七八九十百千万零]{1,}" '正则表达式
+    reg.Global = not getNewNameData.custom.onlyFirstNum
     
+    Set matches = reg.Execute(newName)
+    For Each match In matches
+        newName = Replace(newName, match.Value, ConverToDigit(match.Value))
+    Next
+    OnGetNewName = newName & item.ext
 End Function
 
 '将单个文字转换成数字
@@ -88,16 +94,16 @@ End Function
 '修正二百五，三万三的情况
 '@laoqiuqiu
 Function FixChs(cnNumber)
-	Dim LU, SLU
-	LU = ToDigit(Right(cnNumber,1))
-	SLU = ToDigit(Left(Right(cnNumber,2),1))
-	FixChs = cnNumber
-	If (SLU > 10) And (LU < 10) Then
-		Select Case SLU
-			Case 100       : FixChs = cnNumber & "十"
-			Case 1000      : FixChs = cnNumber & "百"
-			Case 10000     : FixChs = cnNumber & "千"
-			Case 100000000 : FixChs = cnNumber & "千万"
-		End Select
-	End If
+    Dim LU, SLU
+    LU = ToDigit(Right(cnNumber,1))
+    SLU = ToDigit(Left(Right(cnNumber,2),1))
+    FixChs = cnNumber
+    If (SLU > 10) And (LU < 10) Then
+        Select Case SLU
+            Case 100       : FixChs = cnNumber & "十"
+            Case 1000      : FixChs = cnNumber & "百"
+            Case 10000     : FixChs = cnNumber & "千"
+            Case 100000000 : FixChs = cnNumber & "千万"
+        End Select
+    End If
 End Function
