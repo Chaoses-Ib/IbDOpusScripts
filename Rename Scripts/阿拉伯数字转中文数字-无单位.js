@@ -1,10 +1,10 @@
 // 阿拉伯数字转中文数字-无单位
 // 作者：@Chaoses-Ib
-// 版本：220626
+// 版本：220626.2
 // 仓库：https://github.com/Chaoses-Ib/IbDOpusScripts
 
 // 从命令进行调用：
-// Rename PRESET="阿拉伯数字转中文数字-无单位" SCRIPTARG upperCase:false
+// Rename PRESET="阿拉伯数字转中文数字-无单位" SCRIPTARG onlyFirstNumber:true upperCase:false
 
 function OnGetCustomFields(getFieldData)
 {
