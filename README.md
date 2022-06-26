@@ -30,8 +30,12 @@ Add a size column which retrieves sizes of files and folders from Everything. (T
   Decode percent-encoding (URL encoding).
 * [EncodingConvert](Rename%20Scripts/EncodingConvert.js)  
   ![](Rename%20Scripts/images/EncodingConvert.zh-Hans.png)
-* [中文数字转阿拉伯数字-WSQL](Rename%20Scripts/中文数字转阿拉伯数字-WSQL.vbs)
-* [阿拉伯数字转中文数字-WSQL](Rename%20Scripts/阿拉伯数字转中文数字-WSQL.vbs)
+* [中文数字转阿拉伯数字-WSQL](Rename%20Scripts/中文数字转阿拉伯数字-WSQL.vbs)  
+  例如将 `一百二十三` 转换为 `123`。
+* [阿拉伯数字转中文数字-WSQL](Rename%20Scripts/阿拉伯数字转中文数字-WSQL.vbs)  
+  例如将 `123` 转换为 `一百二十三`。
+* [阿拉伯数字转中文数字-无单位](Rename%20Scripts/阿拉伯数字转中文数字-无单位.js)  
+  例如将 `123` 转换为 `一二三`。
 * [中英混排加空格](Rename%20Scripts/中英混排加空格.js)  
   在汉字和英文单词间添加空格。
 
