@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<button backcol="none" display="both" hotkey="ctrl+E" label_pos="right" textcol="none" type="menu_button">
+	<label>Everything 搜索</label>
+	<tip>通过 Everything 在当前文件夹下搜索文件</tip>
+	<icon1>#default:find</icon1>
+	<function type="normal">
+		<instruction>@icon:/Everything.exe/.#0,</instruction>
+		<instruction>{alias|Everything.exe} -path {sourcepath} -ontop</instruction>
+	</function>
+	<button backcol="none" display="label" textcol="none">
+		<label>搜索路径</label>
+		<tip>搜索文件时匹配文件路径</tip>
+		<icon1>#newcommand</icon1>
+		<function type="normal">
+			<instruction>{alias|Everything.exe} -path {sourcepath} -matchpath -ontop</instruction>
+		</function>
+	</button>
+	<button backcol="none" display="label" textcol="none">
+		<label>设置 Everything 路径</label>
+		<icon1>#newcommand</icon1>
+		<function type="normal">
+			<instruction>Favorites ALIAS=set NAME=Everything.exe {dlgopen|选择 Everything.exe|*.exe}</instruction>
+		</function>
+	</button>
+</button>
