@@ -5,21 +5,26 @@
 	<icon1>#default:find</icon1>
 	<function type="normal">
 		<instruction>@icon:/Everything.exe/.#0,</instruction>
-		<instruction>{alias|Everything.exe} -path {sourcepath} -ontop</instruction>
+		<instruction>{alias|Everything.exe|noterm} -path {sourcepath} -ontop</instruction>
 	</function>
 	<button backcol="none" display="label" textcol="none">
 		<label>搜索路径</label>
 		<tip>搜索文件时匹配文件路径</tip>
 		<icon1>#newcommand</icon1>
 		<function type="normal">
-			<instruction>{alias|Everything.exe} -path {sourcepath} -matchpath -ontop</instruction>
+			<instruction>{alias|Everything.exe|noterm} -path {sourcepath} -matchpath -ontop</instruction>
 		</function>
 	</button>
 	<button backcol="none" display="label" textcol="none">
 		<label>设置 Everything 路径</label>
 		<icon1>#newcommand</icon1>
-		<function type="normal">
-			<instruction>Favorites ALIAS=set NAME=Everything.exe {dlgopen|选择 Everything.exe|*.exe}</instruction>
+		<function type="script">
+			<instruction>@script JScript</instruction>
+			<instruction>function OnClick(clickData)</instruction>
+			<instruction>{</instruction>
+			<instruction>	// Prevent showing dynamic list</instruction>
+			<instruction>	clickData.func.command.RunCommand(&quot;Favorites ALIAS=set NAME=Everything.exe PATH {dlgopen|选择 Everything.exe|*.exe}&quot;);</instruction>
+			<instruction>}</instruction>
 		</function>
 	</button>
 </button>
