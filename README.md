@@ -7,7 +7,7 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
   通过 [Everything](https://www.voidtools.com/) 在当前文件夹下搜索文件。  
   ![](images/EverythingSearch.zh-Hans.png)
 
-  默认热键 Ctrl+E。
+  在首次使用时需要先点击“设置 Everything 路径”进行初始化。默认热键 Ctrl+E。
 
 ## Scripts
 - [AutoExtract](AutoExtract.js)  
