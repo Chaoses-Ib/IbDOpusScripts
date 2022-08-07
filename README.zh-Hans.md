@@ -34,17 +34,18 @@
 
 ## 重命名脚本
 - [PercentDecode](Rename%20Scripts/PercentDecode.js)（百分号解码）  
-  解码百分号编码（URL编码）。例如将 `%E4%BD%A0%E5%A5%BD` 解码为 `你好`。 
+  解码百分号编码（URL编码），例如将 `%E4%BD%A0%E5%A5%BD` 解码为 `你好`。 
 - [EncodingConvert](Rename%20Scripts/EncodingConvert.js)（编码转换）  
   主要用于修复文件名乱码，例如将 GBK 编码的 `嬻偺嫬奅 椉媀幃` 修复为 Shift-JIS 编码的 `空の境界 両儀式`。 
 
-  ![](Rename%20Scripts/images/EncodingConvert.zh-Hans.png)
+  ![](Rename%20Scripts/images/EncodingConvert.zh-Hans.png)  
+  支持 UTF-8、GBK、Big5、Shift-JIS 和 EUC-KR 编码。
 - [中文数字转阿拉伯数字-WSQL](Rename%20Scripts/中文数字转阿拉伯数字-WSQL.vbs)  
-  例如将 `一百二十三` 转换为 `123`。
+  例如将 `一百二十三` 转换为 `123`。支持大写数字。
 - [阿拉伯数字转中文数字-WSQL](Rename%20Scripts/阿拉伯数字转中文数字-WSQL.vbs)  
-  例如将 `123` 转换为 `一百二十三`。
+  例如将 `123` 转换为 `一百二十三`。支持大写数字。
 - [阿拉伯数字转中文数字-无单位](Rename%20Scripts/阿拉伯数字转中文数字-无单位.js)  
-  例如将 `123` 转换为 `一二三`。
+  例如将 `123` 转换为 `一二三`。支持大写数字。
 - [中英混排加空格](Rename%20Scripts/中英混排加空格.js)  
   在汉字和英文单词之间添加空格，例如将 `你好world` 转换为 `你好 world`。
 

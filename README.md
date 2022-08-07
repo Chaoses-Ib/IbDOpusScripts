@@ -38,13 +38,14 @@ Add a size column which retrieves sizes of files and folders from Everything. (T
 - [EncodingConvert](Rename%20Scripts/EncodingConvert.js)  
   Mainly used to fix the character encoding of filenames. For example, you can fix the GBK-encoded `嬻偺嫬奅 椉媀幃` to Shift-JIS-encoded `空の境界 両儀式`.
 
-  ![](Rename%20Scripts/images/EncodingConvert.zh-Hans.png)
+  ![](Rename%20Scripts/images/EncodingConvert.zh-Hans.png)  
+  Support UTF-8, GBK, Big5, Shift-JIS and EUC-KR encodings.
 - [中文数字转阿拉伯数字-WSQL](Rename%20Scripts/中文数字转阿拉伯数字-WSQL.vbs)  
-  例如将 `一百二十三` 转换为 `123`。
+  例如将 `一百二十三` 转换为 `123`。支持大写数字。
 - [阿拉伯数字转中文数字-WSQL](Rename%20Scripts/阿拉伯数字转中文数字-WSQL.vbs)  
-  例如将 `123` 转换为 `一百二十三`。
+  例如将 `123` 转换为 `一百二十三`。支持大写数字。
 - [阿拉伯数字转中文数字-无单位](Rename%20Scripts/阿拉伯数字转中文数字-无单位.js)  
-  例如将 `123` 转换为 `一二三`。
+  例如将 `123` 转换为 `一二三`。支持大写数字。
 - [中英混排加空格](Rename%20Scripts/中英混排加空格.js)  
   在汉字和英文单词之间添加空格，例如将 `你好world` 转换为 `你好 world`。
 
