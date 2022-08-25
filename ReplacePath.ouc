@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<button backcol="none" display="icon" textcol="none">
+	<label>ReplacePath</label>
+	<template>PATTERN,TO/K,REGEXP/S</template>
+	<icon1>#usercommand</icon1>
+	<function type="script">
+		<instruction>@script JScript</instruction>
+		<instruction>// ReplacePath</instruction>
+		<instruction>// Author: @Chaoses-Ib</instruction>
+		<instruction>// Version: 220825</instruction>
+		<instruction>// Homepage: https://github.com/Chaoses-Ib/IbDOpusScripts</instruction>
+		<instruction />
+		<instruction>function OnClick(clickData)</instruction>
+		<instruction>{</instruction>
+		<instruction>	var func = clickData.func;</instruction>
+		<instruction>	var tab = func.sourcetab;</instruction>
+		<instruction>	var path = String(tab.path).replace(func.args.REGEXP ? new RegExp(func.args.PATTERN) : func.args.PATTERN, func.args.TO);</instruction>
+		<instruction>	// tab.path.Set() and (tab.path = ...) do not work</instruction>
+		<instruction>	func.command.RunCommand(&apos;Go &quot;&apos; + path + &apos;&quot;&apos;)</instruction>
+		<instruction>}</instruction>
+	</function>
+</button>
