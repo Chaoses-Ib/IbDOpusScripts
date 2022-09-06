@@ -18,6 +18,7 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
 ## Commands
 - [Output](Output.ouc)  
   Output text to script log.  
+  
   e.g. `Output "sourcepath: {sourcepath}"`
 - [ReplacePath](ReplacePath.ouc)  
   Replace the current path.
@@ -37,6 +38,10 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
   @ifpath:*\Program Files '(x86')(\*|)
   ReplacePath "\Program Files (x86)" TO "\Program Files"
   ```
+- [Sleep](Sleep.ouc)  
+  Sleep for the specified milliseconds.
+  
+  e.g. `Sleep 3000`
 
 ## Scripts
 - [DialogJump](DialogJump.ahk)  

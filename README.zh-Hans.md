@@ -18,7 +18,8 @@
 ## 命令
 - [Output](Output.ouc)（输出）  
   输出文本到脚本日志。  
-  例子：`Output "sourcepath: {sourcepath}"`
+
+  例如：`Output "sourcepath: {sourcepath}"`
 - [ReplacePath](ReplacePath.ouc)（替换路径）  
   替换当前路径。
 
@@ -37,6 +38,10 @@
   @ifpath:*\Program Files '(x86')(\*|)
   ReplacePath "\Program Files (x86)" TO "\Program Files"
   ```
+- [Sleep](Sleep.ouc)  
+  休眠指定的毫秒时间。
+  
+  例如：`Sleep 3000`
 
 ## 脚本
 - [DialogJump](DialogJump.ahk)（对话框跳转）  
