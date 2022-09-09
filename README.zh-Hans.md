@@ -16,6 +16,17 @@
   关闭当前标签页，如果只剩一个，就直接关闭窗口。（只作参考用途，更好的实现方式是勾选 `配置/文件夹标签/选项` 下的“关闭最后一个标签时同时关闭窗口”。）
 
 ## 命令
+- [GetColumnValue](Commands/GetColumnValue.ouc)（获取列值）  
+  获取指定列的值到 `glob:$result`。
+
+  例如：
+  ```cmd
+  // 语法与重命名对话框中的“新名称”相同
+  GetColumnValue {md5sum}
+  // Output "MD5 校验和: {$glob:$result}"
+  Clipboard SET MD5 校验和: {$glob:$result}
+  @set glob:$result
+  ```
 - [Output](Commands/Output.ouc)（输出）  
   输出文本到脚本日志。  
 

@@ -16,6 +16,17 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
   If there's only one tab, close the lister, otherwise close current tab. (This script is for reference only. A better way to implement it is to turn on "Lister closes when last tab closes" under `Preferences/Folder Tabs/Options`.)
 
 ## Commands
+- [GetColumnValue](Commands/GetColumnValue.ouc)  
+  Get the value of the specified column to `glob:$result`.
+
+  For example:
+  ```cmd
+  // The syntax is the same as the "New name" in the Advanced Rename dialog
+  GetColumnValue {md5sum}
+  // Output "MD5 checksum: {$glob:$result}"
+  Clipboard SET MD5 checksum: {$glob:$result}
+  @set glob:$result
+  ```
 - [Output](Commands/Output.ouc)  
   Output text to script log.  
   

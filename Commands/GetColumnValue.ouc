@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<button backcol="none" display="icon" textcol="none">
+	<label>GetColumnValue</label>
+	<tip>Get the value of the specified column to glob:$result</tip>
+	<template>COLUMN</template>
+	<icon1>#usercommand</icon1>
+	<function type="normal">
+		<instruction>// Author: @Chaoses-Ib</instruction>
+		<instruction>// Version: 220909</instruction>
+		<instruction>// Homepage: https://github.com/Chaoses-Ib/IbDOpusScripts</instruction>
+		<instruction />
+		<instruction>// SCRIPTARG doesn&apos;t work</instruction>
+		<instruction>Rename PATTERN * TO &amp;COLUMN&amp;</instruction>
+		<instruction>@script:jscript</instruction>
+		<instruction>function OnGetNewName(getNewNameData)</instruction>
+		<instruction>{</instruction>
+		<instruction>    DOpus.vars.Set(&quot;$result&quot;, getNewNameData.newname);</instruction>
+		<instruction>    return true;  // prevent rename</instruction>
+		<instruction>}</instruction>
+		<instruction>// Access the result by `{$glob:$result}`</instruction>
+		<instruction>// Delete the result by `@set glob:$result`</instruction>
+	</function>
+</button>
