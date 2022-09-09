@@ -3,24 +3,24 @@ Languages: [English](README.md), [简体中文](README.zh-Hans.md)
 Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](https://github.com/Chaoses-Ib/DirectoryOpus)).
 
 ## Buttons
-- [AutoExtract](AutoExtract.js)  
+- [AutoExtract](Buttons/AutoExtract.js)  
   Extract selected archive to subfolder if there's more than one file under the root path, otherwise (only one file) extract it directly.
-- [Everything 搜索](EverythingSearch.zh-Hans.dcf)  
+- [Everything 搜索](Buttons/EverythingSearch.zh-Hans.dcf)  
   通过 [Everything](https://www.voidtools.com/) 在当前文件夹下搜索文件。  
-  ![](images/EverythingSearch.zh-Hans.png)
+  ![](Buttons/images/EverythingSearch.zh-Hans.png)
 
   在首次使用时需要先点击“设置 Everything 路径”进行初始化。默认热键 Ctrl+E。
-- [PasteInto](PasteInto.js)  
+- [PasteInto](Buttons/PasteInto.js)  
   Paste files into every selected folder.
-- ~~[CloseTabOrLister](CloseTabOrLister.js)~~  
+- ~~[CloseTabOrLister](Buttons/CloseTabOrLister.js)~~  
   If there's only one tab, close the lister, otherwise close current tab. (This script is for reference only. A better way to implement it is to turn on "Lister closes when last tab closes" under `Preferences/Folder Tabs/Options`.)
 
 ## Commands
-- [Output](Output.ouc)  
+- [Output](Commands/Output.ouc)  
   Output text to script log.  
   
   e.g. `Output "sourcepath: {sourcepath}"`
-- [ReplacePath](ReplacePath.ouc)  
+- [ReplacePath](Commands/ReplacePath.ouc)  
   Replace the current path.
 
   Switch between the same folders under C drive and D drive:
@@ -38,19 +38,19 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
   @ifpath:*\Program Files '(x86')(\*|)
   ReplacePath "\Program Files (x86)" TO "\Program Files"
   ```
-- [Sleep](Sleep.ouc)  
+- [Sleep](Commands/Sleep.ouc)  
   Sleep for the specified milliseconds.
   
   e.g. `Sleep 3000`
 
 ## Scripts
-- [DialogJump](DialogJump.ahk)  
+- [DialogJump](Scripts/DialogJump.ahk)  
   When in the editor of the file dialog, press Ctrl+G to jump to the last activated folder of listers. If Ctrl+G does not work, type "//cur " to trigger it. (Download the executable file from [Releases](../../releases) if you do not have [AutoHotkey v2](https://www.autohotkey.com/v2/))
-- [EventWatchers](EventWatchers)  
+- [EventWatchers](Scripts/EventWatchers)  
   Output script event information when the event is triggered.
-- [ObjectViewers](ObjectViewers)  
+- [ObjectViewers](Scripts/ObjectViewers)  
   Output script object information.
-- ~~[SizeColByEverything](SizeColByEverything/README.zh-Hans.md)~~  
+- ~~[SizeColByEverything](Scripts/SizeColByEverything/README.zh-Hans.md)~~  
   Add a size column which retrieves sizes of files and folders from Everything. (This script is for reference only. Use [IbDOpusExt](https://github.com/Chaoses-Ib/IbDOpusExt)'s Size column instead.)
 
 ## Rename Scripts

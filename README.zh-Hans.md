@@ -3,24 +3,24 @@
 一些 [Directory Opus](https://github.com/Chaoses-Ib/DirectoryOpus) 的脚本。
 
 ## 按钮
-- [AutoExtract](AutoExtract.js)（自动解压）  
+- [AutoExtract](Buttons/AutoExtract.js)（自动解压）  
   对于选中的压缩包，如果根目录内文件多于一个，就解压到子文件夹；如果只有一个，就直接解压到当前目录。
-- [Everything 搜索](EverythingSearch.zh-Hans.dcf)  
+- [Everything 搜索](Buttons/EverythingSearch.zh-Hans.dcf)  
   通过 [Everything](https://www.voidtools.com/) 在当前文件夹下搜索文件。  
-  ![](images/EverythingSearch.zh-Hans.png)
+  ![](Buttons/images/EverythingSearch.zh-Hans.png)
 
   在首次使用时需要先点击“设置 Everything 路径”进行初始化。默认热键 Ctrl+E。
-- [PasteInto](PasteInto.js)（粘贴进去）  
+- [PasteInto](Buttons/PasteInto.js)（粘贴进去）  
   把文件粘贴进每个选中的文件夹。
-- ~~[CloseTabOrLister](CloseTabOrLister.js)（关闭标签页）~~  
+- ~~[CloseTabOrLister](Buttons/CloseTabOrLister.js)（关闭标签页）~~  
   关闭当前标签页，如果只剩一个，就直接关闭窗口。（只作参考用途，更好的实现方式是勾选 `配置/文件夹标签/选项` 下的“关闭最后一个标签时同时关闭窗口”。）
 
 ## 命令
-- [Output](Output.ouc)（输出）  
+- [Output](Commands/Output.ouc)（输出）  
   输出文本到脚本日志。  
 
   例如：`Output "sourcepath: {sourcepath}"`
-- [ReplacePath](ReplacePath.ouc)（替换路径）  
+- [ReplacePath](Commands/ReplacePath.ouc)（替换路径）  
   替换当前路径。
 
   在C盘和D盘下的相同文件夹间切换：
@@ -38,19 +38,19 @@
   @ifpath:*\Program Files '(x86')(\*|)
   ReplacePath "\Program Files (x86)" TO "\Program Files"
   ```
-- [Sleep](Sleep.ouc)  
+- [Sleep](Commands/Sleep.ouc)  
   休眠指定的毫秒时间。
   
   例如：`Sleep 3000`
 
 ## 脚本
-- [DialogJump](DialogJump.ahk)（对话框跳转）  
+- [DialogJump](Scripts/DialogJump.ahk)（对话框跳转）  
   在文件对话框编辑框中按 Ctrl+G 跳转到 DOpus 最近激活的文件夹。Ctrl+G 无效时可以输入“//cur ”来触发。（如果没有 [AutoHotkey v2](https://www.autohotkey.com/v2/) 的话可以从 [Releases](../../releases) 下载可执行文件）
-- [EventWatchers](EventWatchers)（查看脚本事件）  
+- [EventWatchers](Scripts/EventWatchers)（查看脚本事件）  
   触发脚本事件时输出事件信息。
-- [ObjectViewers](ObjectViewers)（查看脚本对象）  
+- [ObjectViewers](Scripts/ObjectViewers)（查看脚本对象）  
   输出脚本对象信息。
-- ~~[SizeColByEverything](SizeColByEverything/README.zh-Hans.md)（Ev 尺寸列）~~  
+- ~~[SizeColByEverything](Scripts/SizeColByEverything/README.zh-Hans.md)（Ev 尺寸列）~~  
   为 DO 添加一个 Size 列，通过 Everything 获取文件和文件夹的大小。（只作参考用途，请使用 [IbDOpusExt](https://github.com/Chaoses-Ib/IbDOpusExt) 的尺寸列替代。）
 
 ## 重命名脚本
