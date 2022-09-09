@@ -22,10 +22,14 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
   For example:
   ```cmd
   // The syntax is the same as the "New name" in the Advanced Rename dialog
-  GetColumnValue {md5sum}
-  // Output "MD5 checksum: {$glob:$result}"
-  Clipboard SET MD5 checksum: {$glob:$result}
+  GetColumnValue "* {md5sum}"
+  Clipboard SET {$glob:$result}
   @set glob:$result
+  ```
+  Corresponding result:
+  ```
+  .gitignore 3b121da4db64aa59864e9ed46fa68d0a
+  LICENSE.txt dda85d3253cbd75fd74cceb14c1d8b02
   ```
 - [Output](Commands/Output.ouc)  
   Output text to script log.  

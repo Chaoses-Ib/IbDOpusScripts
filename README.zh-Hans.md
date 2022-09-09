@@ -22,10 +22,14 @@
   例如：
   ```cmd
   // 语法与重命名对话框中的“新名称”相同
-  GetColumnValue {md5sum}
-  // Output "MD5 校验和: {$glob:$result}"
-  Clipboard SET MD5 校验和: {$glob:$result}
+  GetColumnValue "* {md5sum}"
+  Clipboard SET {$glob:$result}
   @set glob:$result
+  ```
+  对应结果：
+  ```
+  .gitignore 3b121da4db64aa59864e9ed46fa68d0a
+  LICENSE.txt dda85d3253cbd75fd74cceb14c1d8b02
   ```
 - [Output](Commands/Output.ouc)（输出）  
   输出文本到脚本日志。  
