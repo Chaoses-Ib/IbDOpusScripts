@@ -10,6 +10,10 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
   ![](Buttons/images/EverythingSearch.zh-Hans.png)
 
   在首次使用时需要先点击“设置 Everything 路径”进行初始化。默认热键 Ctrl+E。
+- [控制面板-雨](Buttons/控制面板-雨.dcf)  
+  ![](Buttons/images/控制面板-雨.png)
+
+  作者：雨浪飘零
 - [PasteInto](Buttons/PasteInto.js)  
   Paste files into every selected folder.
 - ~~[CloseTabOrLister](Buttons/CloseTabOrLister.js)~~  
