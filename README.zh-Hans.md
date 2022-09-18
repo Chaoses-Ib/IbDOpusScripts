@@ -16,6 +16,10 @@
   作者：雨浪飘零
 - [PasteInto](Buttons/PasteInto.js)（粘贴进去）  
   把文件粘贴进每个选中的文件夹。
+- [系统管理-雨](Buttons/系统管理-雨.dcf)  
+  ![](Buttons/images/系统管理-雨.png)
+
+  作者：雨浪飘零
 - ~~[CloseTabOrLister](Buttons/CloseTabOrLister.js)（关闭标签页）~~  
   关闭当前标签页，如果只剩一个，就直接关闭窗口。（只作参考用途，更好的实现方式是勾选 `配置/文件夹标签/选项` 下的“关闭最后一个标签时同时关闭窗口”。）
 

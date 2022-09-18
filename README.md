@@ -16,6 +16,10 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
   作者：雨浪飘零
 - [PasteInto](Buttons/PasteInto.js)  
   Paste files into every selected folder.
+- [系统管理-雨](Buttons/系统管理-雨.dcf)  
+  ![](Buttons/images/系统管理-雨.png)
+
+  作者：雨浪飘零
 - ~~[CloseTabOrLister](Buttons/CloseTabOrLister.js)~~  
   If there's only one tab, close the lister, otherwise close current tab. (This script is for reference only. A better way to implement it is to turn on "Lister closes when last tab closes" under `Preferences/Folder Tabs/Options`.)
 
