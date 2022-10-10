@@ -5,17 +5,21 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
 ## Buttons
 - [AutoExtract](Buttons/AutoExtract.js)  
   Extract selected archive to subfolder if there's more than one file under the root path, otherwise (only one file) extract it directly.
-- [Everything 搜索](Buttons/EverythingSearch.zh-Hans.dcf)  
-  通过 [Everything](https://www.voidtools.com/) 在当前文件夹下搜索文件。  
-  ![](Buttons/images/EverythingSearch.zh-Hans.png)
+- [Everything 搜索](Buttons/EverythingSearch.zh-Hans.dcf)
+  
+  ![](Buttons/images/EverythingSearch.zh-Hans.png)  
+  通过 [Everything](https://www.voidtools.com/) 在当前文件夹下搜索文件。
 
   在首次使用时需要先点击“设置 Everything 路径”进行初始化。默认热键 Ctrl+E。
 - [控制面板-雨](Buttons/控制面板-雨.dcf)  
   ![](Buttons/images/控制面板-雨.png)
 
   作者：雨浪飘零
-- [PasteInto](Buttons/PasteInto.js)  
+- [PasteInto](Buttons/PasteInto.dcf)
+
+  ![](Buttons/images/PasteInto.png)  
   Paste files into every selected folder.
+
 - [系统管理-雨](Buttons/系统管理-雨.dcf)  
   ![](Buttons/images/系统管理-雨.png)
 

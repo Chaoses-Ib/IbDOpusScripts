@@ -1,0 +1,30 @@
+﻿<?xml version="1.0"?>
+<button backcol="none" display="both" label_pos="right" separate="yes" textcol="none">
+	<label>Paste Into</label>
+	<tip>Paste files into every selected folder</tip>
+	<icon1>#clippaste</icon1>
+	<function type="script">
+		<instruction>@script JScript</instruction>
+		<instruction>// PasteInto</instruction>
+		<instruction>// Author: @Chaoses-Ib, @Sanhuaitang</instruction>
+		<instruction>// Version: 221010</instruction>
+		<instruction>// Git: https://github.com/Chaoses-Ib/IbDOpusScripts</instruction>
+		<instruction />
+		<instruction>function OnClick(clickData)</instruction>
+		<instruction>{</instruction>
+		<instruction>    var cmd = clickData.func.command</instruction>
+		<instruction>    cmd.deselect = false</instruction>
+		<instruction>    </instruction>
+		<instruction>    var dirs = clickData.func.sourcetab.selected_dirs</instruction>
+		<instruction>    if (dirs.count == 0) {</instruction>
+		<instruction>		DOpus.Output(&quot;No folder selected&quot;)</instruction>
+		<instruction>        return</instruction>
+		<instruction>    }</instruction>
+		<instruction>    for (var e = new Enumerator(dirs); !e.atEnd(); e.moveNext()) {</instruction>
+		<instruction>        //DOpus.Output(e.item().realpath)</instruction>
+		<instruction>        cmd.SetSource(e.item().realpath)  // Not Dest</instruction>
+		<instruction>        cmd.RunCommand(&quot;Clipboard PASTE&quot;)</instruction>
+		<instruction>    }</instruction>
+		<instruction>}</instruction>
+	</function>
+</button>
