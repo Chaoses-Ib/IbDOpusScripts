@@ -88,6 +88,10 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
 
   ![](Rename%20Scripts/images/EncodingConvert.zh-Hans.png)  
   Support UTF-8, GBK, Big5, Shift-JIS and EUC-KR encodings.
+- [繁体中文转简体](Rename%20Scripts/繁体中文转简体.js)  
+  例如将 `邊緣行者` 转换为 `边缘行者`。
+- [简体中文转繁体](Rename%20Scripts/简体中文转繁体.js)  
+  例如将 `边缘行者` 转换为 `邊緣行者`。
 - [中文数字转阿拉伯数字-WSQL](Rename%20Scripts/中文数字转阿拉伯数字-WSQL.vbs)  
   例如将 `一百二十三` 转换为 `123`。支持大写数字。
 - [阿拉伯数字转中文数字-WSQL](Rename%20Scripts/阿拉伯数字转中文数字-WSQL.vbs)  
