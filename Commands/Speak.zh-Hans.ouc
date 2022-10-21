@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<button backcol="none" display="icon" textcol="none">
+	<label>说</label>
+	<tip>文本转语音</tip>
+	<template>TEXT/R</template>
+	<icon1>#usercommand</icon1>
+	<function type="script">
+		<instruction>@script JScript</instruction>
+		<instruction>// 版本：221021</instruction>
+		<instruction>// 作者：@Chaoses-Ib</instruction>
+		<instruction>// 主页：https://github.com/Chaoses-Ib/IbDOpusScripts</instruction>
+		<instruction />
+		<instruction>function OnClick(clickData)</instruction>
+		<instruction>{</instruction>
+		<instruction>	var v = new ActiveXObject(&quot;SAPI.SpVoice&quot;)</instruction>
+		<instruction>	v.speak(clickData.func.args.TEXT)</instruction>
+		<instruction>}</instruction>
+	</function>
+</button>

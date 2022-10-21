@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<button backcol="none" display="icon" textcol="none">
+	<label>Speak</label>
+	<tip>Text to speech</tip>
+	<template>TEXT/R</template>
+	<icon1>#usercommand</icon1>
+	<function type="script">
+		<instruction>@script JScript</instruction>
+		<instruction>// Version: 221021</instruction>
+		<instruction>// Author: @Chaoses-Ib</instruction>
+		<instruction>// HomePage: https://github.com/Chaoses-Ib/IbDOpusScripts</instruction>
+		<instruction />
+		<instruction>function OnClick(clickData)</instruction>
+		<instruction>{</instruction>
+		<instruction>	var v = new ActiveXObject(&quot;SAPI.SpVoice&quot;)</instruction>
+		<instruction>	v.speak(clickData.func.args.TEXT)</instruction>
+		<instruction>}</instruction>
+	</function>
+</button>

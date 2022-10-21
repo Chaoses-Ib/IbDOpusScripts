@@ -69,6 +69,10 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
   Sleep for the specified milliseconds.
   
   e.g. `Sleep 3000`
+- [Speak](Commands/Speak.ouc)  
+  Text to speech.
+
+  e.g. `Speak "My Moon My Man"`
 
 ## Scripts
 - [DialogJump](Scripts/DialogJump.ahk)  

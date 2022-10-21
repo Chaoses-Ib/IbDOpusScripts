@@ -69,6 +69,10 @@
   休眠指定的毫秒时间。
   
   例如：`Sleep 3000`
+- [说](Commands/Speak.zh-Hans.ouc)（[Speak](Commands/Speak.ouc)）  
+  文本转语音。
+
+  例如：`说 "荒耶 所求为何"`
 
 ## 脚本
 - [DialogJump](Scripts/DialogJump.ahk)（对话框跳转）  
