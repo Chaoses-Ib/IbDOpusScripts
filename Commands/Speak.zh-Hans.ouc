@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <button backcol="none" display="icon" textcol="none">
 	<label>说</label>
 	<tip>文本转语音</tip>
