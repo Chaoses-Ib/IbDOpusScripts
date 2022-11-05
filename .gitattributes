@@ -1,0 +1,6 @@
+*.ouc linguist-language=JS
+*.vbs.ouc linguist-language=VBScript
+*.cmd.ouc linguist-language=Batchfile
+*.dcf linguist-language=JS
+*.vbs.dcf linguist-language=VBScript
+*.cmd.dcf linguist-language=Batchfile

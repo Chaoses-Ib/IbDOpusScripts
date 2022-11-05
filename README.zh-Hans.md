@@ -5,13 +5,13 @@
 ## 按钮
 - [AutoExtract](Buttons/AutoExtract.js)（自动解压）  
   对于选中的压缩包，如果根目录内文件多于一个，就解压到子文件夹；如果只有一个，就直接解压到当前目录。
-- [Everything 搜索](Buttons/EverythingSearch.zh-Hans.dcf)
+- [Everything 搜索](Buttons/EverythingSearch.zh-Hans.cmd.dcf)
   
   ![](Buttons/images/EverythingSearch.zh-Hans.png)  
   通过 [Everything](https://www.voidtools.com/) 在当前文件夹下搜索文件。
 
   在首次使用时需要先点击“设置 Everything 路径”进行初始化。默认热键 Ctrl+E。
-- [控制面板-雨](Buttons/控制面板-雨.dcf)  
+- [控制面板-雨](Buttons/控制面板-雨.cmd.dcf)  
   ![](Buttons/images/控制面板-雨.png)
 
   作者：雨浪飘零
@@ -20,7 +20,7 @@
   ![](Buttons/images/PasteInto.zh-Hans.png)  
   将文件粘贴进选中的每个文件夹中。
 
-- [系统管理-雨](Buttons/系统管理-雨.dcf)  
+- [系统管理-雨](Buttons/系统管理-雨.cmd.dcf)  
   ![](Buttons/images/系统管理-雨.png)
 
   作者：雨浪飘零
@@ -65,7 +65,7 @@
   @ifpath:*\Program Files '(x86')(\*|)
   ReplacePath "\Program Files (x86)" TO "\Program Files"
   ```
-- [Sleep](Commands/Sleep.ouc)  
+- [Sleep](Commands/Sleep.cmd.ouc)  
   休眠指定的毫秒时间。
   
   例如：`Sleep 3000`
