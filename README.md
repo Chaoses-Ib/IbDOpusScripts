@@ -86,7 +86,7 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
 
 ## Rename Scripts
 - [PercentDecode](Rename%20Scripts/PercentDecode.js)  
-  Decode percent-encoding (URL encoding). For example, `%E4%BD%A0%E5%A5%BD` can be decoded to `你好`.
+  Decode percent-encoding (URL encoding). For example, `%E4%BD%A0%E5%A5%BD` and `%u4F60%u597D` can be decoded to `你好`.
 - [EncodingConvert](Rename%20Scripts/EncodingConvert.js)  
   Mainly used to fix the character encoding of filenames. For example, you can fix the GBK-encoded `嬻偺嫬奅 椉媀幃` to Shift-JIS-encoded `空の境界 両儀式`.
 

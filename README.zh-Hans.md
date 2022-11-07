@@ -86,7 +86,7 @@
 
 ## 重命名脚本
 - [PercentDecode](Rename%20Scripts/PercentDecode.js)（百分号解码）  
-  解码百分号编码（URL编码），例如将 `%E4%BD%A0%E5%A5%BD` 解码为 `你好`。 
+  解码百分号编码（URL编码），例如将 `%E4%BD%A0%E5%A5%BD` 和 `%u4F60%u597D` 解码为 `你好`。 
 - [EncodingConvert](Rename%20Scripts/EncodingConvert.js)（编码转换）  
   主要用于修复文件名乱码，例如将 GBK 编码的 `嬻偺嫬奅 椉媀幃` 修复为 Shift-JIS 编码的 `空の境界 両儀式`。 
 
