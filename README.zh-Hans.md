@@ -65,7 +65,7 @@
   @ifpath:*\Program Files '(x86')(\*|)
   ReplacePath "\Program Files (x86)" TO "\Program Files"
   ```
-- [Sleep](Commands/Sleep.cmd.ouc)  
+- [Sleep](Commands/Sleep.ouc)  
   休眠指定的毫秒时间。
   
   例如：`Sleep 3000`

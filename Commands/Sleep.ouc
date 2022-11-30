@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<button backcol="none" display="icon" textcol="none">
+	<label>Sleep</label>
+	<tip>Sleep for the specified milliseconds</tip>
+	<template>TIME</template>
+	<icon1>#usercommand</icon1>
+	<function type="script">
+		<instruction>@script JScript</instruction>
+		<instruction>// Version: 221130</instruction>
+		<instruction>// Author: @Chaoses-Ib, @Sanhuaitang</instruction>
+		<instruction>// Homepage: https://github.com/Chaoses-Ib/IbDOpusScripts</instruction>
+		<instruction />
+		<instruction>function OnClick(clickData)</instruction>
+		<instruction>{</instruction>
+		<instruction>	DOpus.Delay(clickData.func.args.TIME)</instruction>
+		<instruction>}</instruction>
+	</function>
+</button>

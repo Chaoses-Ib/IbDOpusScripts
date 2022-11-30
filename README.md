@@ -65,7 +65,7 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
   @ifpath:*\Program Files '(x86')(\*|)
   ReplacePath "\Program Files (x86)" TO "\Program Files"
   ```
-- [Sleep](Commands/Sleep.cmd.ouc)  
+- [Sleep](Commands/Sleep.ouc)  
   Sleep for the specified milliseconds.
   
   e.g. `Sleep 3000`
