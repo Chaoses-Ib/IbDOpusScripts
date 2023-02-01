@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<toolbar version="12.23">
+	<wallpaper enabled="yes" inheritable="yes" type="tile">
+		<std_type>toolbar</std_type>
+	</wallpaper>
+	<buttons backcol="none" display="label" textcol="none" type="menu">
+		<button backcol="none" display="label" textcol="none">
+			<label>32px</label>
+			<icon1>#thumbnailsize</icon1>
+			<function type="normal">
+				<instruction>SmartThumbnailSize SIZE=32</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" textcol="none">
+			<label>64px</label>
+			<icon1>#newcommand</icon1>
+			<function type="normal">
+				<instruction>SmartThumbnailSize SIZE=64</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" textcol="none">
+			<label>128px</label>
+			<icon1>#newcommand</icon1>
+			<function type="normal">
+				<instruction>SmartThumbnailSize SIZE=128</instruction>
+			</function>
+		</button>
+		<button backcol="none" display="label" textcol="none">
+			<label>256px</label>
+			<icon1>#newcommand</icon1>
+			<function type="normal">
+				<instruction>SmartThumbnailSize SIZE=256</instruction>
+			</function>
+		</button>
+	</buttons>
+</toolbar>

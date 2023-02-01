@@ -81,6 +81,19 @@
   触发脚本事件时输出事件信息。
 - [ObjectViewers](Scripts/ObjectViewers)（查看脚本对象）  
   输出脚本对象信息。
+- [SmartThumbnailSize](Scripts/SmartThumbnailSize/SmartThumbnailSize.js)
+
+  根据文件夹中的图片自动调整缩略图比例。
+
+  使用前 | 使用后
+  --- | ---
+  ![](Scripts/SmartThumbnailSize/images/before.png) | ![](Scripts/SmartThumbnailSize/images/after.png)
+
+  你可以通过运行类似 `SmartThumbnailSize SIZE=256` 的命令来将缩略图设置为指定尺寸。
+
+  你也可以导入[工具栏](Scripts/SmartThumbnailSize/SmartThumbnailSize.cmd.dop)：
+
+  ![](Scripts/SmartThumbnailSize/images/toolbar.png)
 - ~~[SizeColByEverything](Scripts/SizeColByEverything/README.zh-Hans.md)（Ev 尺寸列）~~  
   为 DO 添加一个 Size 列，通过 Everything 获取文件和文件夹的大小。（只作参考用途，请使用 [IbDOpusExt](https://github.com/Chaoses-Ib/IbDOpusExt) 的尺寸列替代。）
 

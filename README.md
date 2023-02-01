@@ -81,6 +81,21 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
   Output script event information when the event is triggered.
 - [ObjectViewers](Scripts/ObjectViewers)  
   Output script object information.
+- [SmartThumbnailSize](Scripts/SmartThumbnailSize/SmartThumbnailSize.js)
+
+  Automatically adjust the thumbnail ratio according to the images in the folder.
+
+  Before | After
+  --- | ---
+  ![](Scripts/SmartThumbnailSize/images/before.png) | ![](Scripts/SmartThumbnailSize/images/after.png)
+
+  You can set the thumbnail to specified size by running a command like `SmartThumbnailSize SIZE=256`.
+
+  You can also import [the toolbar](Scripts/SmartThumbnailSize/SmartThumbnailSize.cmd.dop):
+
+  ![](Scripts/SmartThumbnailSize/images/toolbar.png)
+
+
 - ~~[SizeColByEverything](Scripts/SizeColByEverything/README.zh-Hans.md)~~  
   Add a size column which retrieves sizes of files and folders from Everything. (This script is for reference only. Use [IbDOpusExt](https://github.com/Chaoses-Ib/IbDOpusExt)'s Size column instead.)
 

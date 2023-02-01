@@ -4,3 +4,6 @@
 *.dcf linguist-language=JS
 *.vbs.dcf linguist-language=VBScript
 *.cmd.dcf linguist-language=Batchfile
+*.dop linguist-language=JS
+*.vbs.dop linguist-language=VBScript
+*.cmd.dop linguist-language=Batchfile
