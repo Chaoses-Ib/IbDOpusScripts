@@ -2,7 +2,7 @@
 {
     scriptInitData.name = "SmartThumbnailSize";
     scriptInitData.desc = DOpus.strings.Get('description');
-    scriptInitData.version = "0.2";
+    scriptInitData.version = "0.2.1";
     scriptInitData.copyright = "Chaoses Ib";
     scriptInitData.url = "https://github.com/Chaoses-Ib/IbDOpusScripts";
     scriptInitData.default_enable = true;
@@ -25,7 +25,7 @@ function adjustThumbnailSize(tab, size) {
     if (tab.format.view == "thumbnails") {
         var files = tab.files;
 
-        // Get the median area and the correspoding width and height
+        // Get the median ratio and the correspoding width and height
         var images = [];
         for (var e = new Enumerator(files); !e.atEnd(); e.moveNext()) {
             var file = e.item();
@@ -39,7 +39,7 @@ function adjustThumbnailSize(tab, size) {
         var width = 1, height = 1;
         if (images.length > 0) {
             images.sort(function (a, b) {
-                return a.picwidth * a.picheight - b.picwidth * b.picheight;
+                return a.picwidth / a.picheight - b.picwidth / b.picheight;
             });
             median = images[Math.floor(images.length / 2)];
             width = median.picwidth;
