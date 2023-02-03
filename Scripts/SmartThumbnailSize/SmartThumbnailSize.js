@@ -20,17 +20,18 @@
 }
 
 function adjustThumbnailSize(tab, size) {
-    var files = tab.files;
-    var width, height;
-    for (var e = new Enumerator(files); !e.atEnd(); e.moveNext()) {
-        var file = e.item();
-        if (file.metadata == "image" || file.metadata == "video") {
-            width = file.metadata.image.picwidth;
-            height = file.metadata.image.picheight;
-            break;
+    if (tab.format.view == "thumbnails") {
+        var files = tab.files;
+        var width = 1, height = 1;
+        for (var e = new Enumerator(files); !e.atEnd(); e.moveNext()) {
+            var file = e.item();
+            if (file.metadata == "image" || file.metadata == "video") {
+                width = file.metadata.image.picwidth;
+                height = file.metadata.image.picheight;
+                break;
+            }
         }
-    }
-    if (!e.atEnd()) {
+        
         var cmd = DOpus.Create().Command();
         cmd.SetSourceTab(tab);
         if (width > height) {
