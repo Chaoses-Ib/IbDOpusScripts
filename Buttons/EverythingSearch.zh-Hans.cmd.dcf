@@ -5,14 +5,14 @@
 	<icon1>#default:find</icon1>
 	<function type="normal">
 		<instruction>@icon:/Everything.exe/.#0,</instruction>
-		<instruction>{alias|Everything.exe|noterm} -path {sourcepath} -ontop</instruction>
+		<instruction>{alias|Everything.exe|noterm} -path {sourcepath}</instruction>
 	</function>
 	<button backcol="none" display="label" textcol="none">
 		<label>搜索路径</label>
 		<tip>搜索文件时匹配文件路径</tip>
 		<icon1>#newcommand</icon1>
 		<function type="normal">
-			<instruction>{alias|Everything.exe|noterm} -path {sourcepath} -matchpath -ontop</instruction>
+			<instruction>{alias|Everything.exe|noterm} -path {sourcepath} -matchpath</instruction>
 		</function>
 	</button>
 	<button backcol="none" display="label" textcol="none">
