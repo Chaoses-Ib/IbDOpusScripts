@@ -95,6 +95,13 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
 
   ![](Scripts/SmartThumbnailSize/images/toolbar.png)
 
+- [TabColorizer](Scripts/TabColorizer/TabColorizer.js)
+
+  Colorize the folder tab with the color of its label.
+
+  Before | After
+  --- | ---
+  ![](Scripts/TabColorizer/images/before.png) | ![](Scripts/TabColorizer/images/after.png)
 
 - ~~[SizeColByEverything](Scripts/SizeColByEverything/README.zh-Hans.md)~~  
   Add a size column which retrieves sizes of files and folders from Everything. (This script is for reference only. Use [IbDOpusExt](https://github.com/Chaoses-Ib/IbDOpusExt)'s Size column instead.)

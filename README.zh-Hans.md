@@ -94,6 +94,15 @@
   你也可以导入[工具栏](Scripts/SmartThumbnailSize/SmartThumbnailSize.cmd.dop)：
 
   ![](Scripts/SmartThumbnailSize/images/toolbar.png)
+
+- [TabColorizer](Scripts/TabColorizer/TabColorizer.js)
+
+  使用文件夹标记的颜色对文件夹标签进行染色。
+
+  使用前 | 使用后
+  --- | ---
+  ![](Scripts/TabColorizer/images/before.png) | ![](Scripts/TabColorizer/images/after.png)
+
 - ~~[SizeColByEverything](Scripts/SizeColByEverything/README.zh-Hans.md)（Ev 尺寸列）~~  
   为 DO 添加一个 Size 列，通过 Everything 获取文件和文件夹的大小。（只作参考用途，请使用 [IbDOpusExt](https://github.com/Chaoses-Ib/IbDOpusExt) 的尺寸列替代。）
 
