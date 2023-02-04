@@ -1,7 +1,7 @@
 ﻿function OnInit(scriptInitData) {
     scriptInitData.name = "TabColorizer";
     scriptInitData.desc = DOpus.strings.Get("description");
-    scriptInitData.version = "0.1";
+    scriptInitData.version = "0.1.1";
     scriptInitData.copyright = "Chaoses Ib";
     scriptInitData.url = "https://github.com/Chaoses-Ib/IbDOpusScripts";
     scriptInitData.default_enable = true;
@@ -95,7 +95,9 @@ function chooseColor(fg, bg, selFg, selBg) {
 }
 
 function OnOpenTab(openTabData) {
-    colorizeTab(openTabData.tab, true);
+    if (openTabData.tab.path != "") {
+        colorizeTab(openTabData.tab, true);
+    }
 }
 
 function OnAfterFolderChange(afterFolderChangeData) {
