@@ -128,5 +128,6 @@
   在汉字和英文单词之间添加空格，例如将 `你好world` 转换为 `你好 world`。
 
 ## 相关推荐
+- [Telegram 群组](https://t.me/IbDirectoryOpusGroup)
 - [IbDOpusExt](https://github.com/Chaoses-Ib/IbDOpusExt)
 - [laoqiuqiu/DOpus-Script](https://github.com/laoqiuqiu/DOpus-Script)

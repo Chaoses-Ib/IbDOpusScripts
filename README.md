@@ -128,5 +128,6 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
   在汉字和英文单词之间添加空格，例如将 `你好world` 转换为 `你好 world`。
 
 ## See Also
+- [Telegram group](https://t.me/IbDirectoryOpusGroup)
 - [IbDOpusExt](https://github.com/Chaoses-Ib/IbDOpusExt)
 - [laoqiuqiu/DOpus-Script](https://github.com/laoqiuqiu/DOpus-Script)
