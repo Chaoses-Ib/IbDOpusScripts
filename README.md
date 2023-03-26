@@ -83,7 +83,7 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
   Output script object information.
 - [SmartThumbnailSize](Scripts/SmartThumbnailSize/SmartThumbnailSize.js)
 
-  Automatically adjust the thumbnail ratio according to the images in the folder.
+  Automatically adjust the thumbnail ratio according to the images in the folder or the selected images.
 
   Before | After
   --- | ---

@@ -83,7 +83,7 @@
   输出脚本对象信息。
 - [SmartThumbnailSize](Scripts/SmartThumbnailSize/SmartThumbnailSize.js)
 
-  根据文件夹中的图片自动调整缩略图比例。
+  根据文件夹中的图片或选中的图片自动调整缩略图比例。
 
   使用前 | 使用后
   --- | ---
