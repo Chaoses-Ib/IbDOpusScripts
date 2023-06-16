@@ -2,7 +2,7 @@ function OnInit(scriptInitData)
 {
     scriptInitData.name = "MaxViewerPane";
     scriptInitData.desc = DOpus.strings.Get('description');
-    scriptInitData.version = "0.1";
+    scriptInitData.version = "0.2";
     scriptInitData.copyright = "Chaoses Ib";
     scriptInitData.url = "https://github.com/Chaoses-Ib/IbDOpusScripts";
     scriptInitData.default_enable = true;
@@ -13,7 +13,7 @@ function OnInit(scriptInitData)
     exePath.Parent();
     exePath.Add("MaxViewerPane");
     exePath.Add("MaxViewerPane.exe");
-    scriptInitData.config.ExePath = exePath;
+    scriptInitData.config.ExePath = String(exePath);
     config_desc("ExePath") = DOpus.strings.Get('exePath');
 
     scriptInitData.config_desc = config_desc;
