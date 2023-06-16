@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<button backcol="none" display="both" label_pos="right" textcol="none">
+	<label>MaxViewerPane</label>
+	<tip>Maximize the viewer pane.</tip>
+	<icon1>#viewerpane2</icon1>
+	<function type="normal">
+		<instruction>MaxViewerPane</instruction>
+	</function>
+</button>

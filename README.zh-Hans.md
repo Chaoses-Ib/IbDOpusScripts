@@ -1,34 +1,46 @@
 # IbDOpusScripts
-语言：[English](README.md)，[简体中文](README.zh-Hans.md)  
+语言：[English](README.md)，[简体中文](README.zh-Hans.md)
+
 一些 [Directory Opus](https://github.com/Chaoses-Ib/DirectoryOpus) 的脚本。
 
 ## 按钮
-- [AutoExtract](Buttons/AutoExtract.js)（自动解压）  
+- [AutoExtract](Buttons/AutoExtract.js)（自动解压）
+
   对于选中的压缩包，如果根目录内文件多于一个，就解压到子文件夹；如果只有一个，就直接解压到当前目录。
+
 - [Everything 搜索](Buttons/EverythingSearch.zh-Hans.cmd.dcf)
   
-  ![](Buttons/images/EverythingSearch.zh-Hans.png)  
+  ![](Buttons/images/EverythingSearch.zh-Hans.png)
+
   通过 [Everything](https://www.voidtools.com/) 在当前文件夹下搜索文件。
 
   在首次使用时需要先点击“设置 Everything 路径”进行初始化。默认热键 Ctrl+E。
-- [控制面板-雨](Buttons/控制面板-雨.cmd.dcf)  
+
+- [控制面板-雨](Buttons/控制面板-雨.cmd.dcf)
+
   ![](Buttons/images/控制面板-雨.png)
 
   作者：雨浪飘零
+
 - [PasteInto](Buttons/PasteInto.zh-Hans.dcf)
 
-  ![](Buttons/images/PasteInto.zh-Hans.png)  
+  ![](Buttons/images/PasteInto.zh-Hans.png)
+
   将文件粘贴进选中的每个文件夹中。
 
-- [系统管理-雨](Buttons/系统管理-雨.cmd.dcf)  
+- [系统管理-雨](Buttons/系统管理-雨.cmd.dcf)
+
   ![](Buttons/images/系统管理-雨.png)
 
   作者：雨浪飘零
-- ~~[CloseTabOrLister](Buttons/CloseTabOrLister.js)（关闭标签页）~~  
+
+- ~~[CloseTabOrLister](Buttons/CloseTabOrLister.js)（关闭标签页）~~
+  
   关闭当前标签页，如果只剩一个，就直接关闭窗口。（只作参考用途，更好的实现方式是勾选 `配置/文件夹标签/选项` 下的“关闭最后一个标签时同时关闭窗口”。）
 
 ## 命令
-- [GetColumnValue](Commands/GetColumnValue.ouc)（获取列值）  
+- [GetColumnValue](Commands/GetColumnValue.ouc)（获取列值）
+  
   获取指定列的值到 `glob:$result`。
 
   例如：
@@ -43,11 +55,15 @@
   .gitignore 3b121da4db64aa59864e9ed46fa68d0a
   LICENSE.txt dda85d3253cbd75fd74cceb14c1d8b02
   ```
-- [Output](Commands/Output.ouc)（输出）  
+
+- [Output](Commands/Output.ouc)（输出）
+
   输出文本到脚本日志。  
 
   例如：`Output "sourcepath: {sourcepath}"`
-- [ReplacePath](Commands/ReplacePath.ouc)（替换路径）  
+
+- [ReplacePath](Commands/ReplacePath.ouc)（替换路径）
+
   替换当前路径。
 
   在C盘和D盘下的相同文件夹间切换：
@@ -65,22 +81,44 @@
   @ifpath:*\Program Files '(x86')(\*|)
   ReplacePath "\Program Files (x86)" TO "\Program Files"
   ```
-- [Sleep](Commands/Sleep.ouc)  
+
+- [Sleep](Commands/Sleep.ouc)
+
   休眠指定的毫秒时间。
   
   例如：`Sleep 3000`
-- [说](Commands/Speak.zh-Hans.ouc)（[Speak](Commands/Speak.ouc)）  
+
+- [说](Commands/Speak.zh-Hans.ouc)（[Speak](Commands/Speak.ouc)）
+
   文本转语音。
 
   例如：`说 "荒耶 所求为何"`
 
 ## 脚本
-- [DialogJump](Scripts/DialogJump.ahk)（对话框跳转）  
-  在文件对话框编辑框中按 Ctrl+G 跳转到 DOpus 最近激活的文件夹。Ctrl+G 无效时可以输入“//cur ”来触发。（如果没有 [AutoHotkey v2](https://www.autohotkey.com/v2/) 的话可以从 [Releases](../../releases) 下载可执行文件）
-- [EventWatchers](Scripts/EventWatchers)（查看脚本事件）  
+- [DialogJump](Scripts/DialogJump.ahk)（对话框跳转）
+
+  在文件对话框编辑框中按 Ctrl+G 跳转到 DOpus 最近激活的文件夹。Ctrl+G 无效时可以输入“//cur ”来触发。（如果没有 [AutoHotkey v2](https://www.autohotkey.com/v2/) 的话可以从 [Releases](https://github.com/Chaoses-Ib/IbDOpusScripts/releases) 下载可执行文件）
+
+- [EventWatchers](Scripts/EventWatchers)（查看脚本事件）
+
   触发脚本事件时输出事件信息。
-- [ObjectViewers](Scripts/ObjectViewers)（查看脚本对象）  
+
+- [MaxViewerPane](Scripts/MaxViewerPane/MaxViewerPane.js)
+
+  最大化查看器窗格。
+
+  使用前 | 使用后
+  --- | ---
+  ![](Scripts/MaxViewerPane/images/before.png) | ![](Scripts/MaxViewerPane/images/after.png)
+
+  该脚本需要一个配套的可执行文件 `MaxViewerPane.exe`。你可以从 [Releases](https://github.com/Chaoses-Ib/IbDOpusScripts/releases) 下载压缩包，并将文件夹解压到脚本旁（即应该存在 `/dopusdata\Script AddIns\MaxViewerPane\MaxViewerPane.exe`）。
+
+  按钮：[MaxViewerPane.dcf](Scripts/MaxViewerPane/MaxViewerPane.dcf)
+
+- [ObjectViewers](Scripts/ObjectViewers)（查看脚本对象）
+
   输出脚本对象信息。
+
 - [SmartThumbnailSize](Scripts/SmartThumbnailSize/SmartThumbnailSize.js)
 
   根据文件夹中的图片或选中的图片自动调整缩略图比例。
@@ -103,28 +141,45 @@
   --- | ---
   ![](Scripts/TabColorizer/images/before.png) | ![](Scripts/TabColorizer/images/after.png)
 
-- ~~[SizeColByEverything](Scripts/SizeColByEverything/README.zh-Hans.md)（Ev 尺寸列）~~  
+- ~~[SizeColByEverything](Scripts/SizeColByEverything/README.zh-Hans.md)（Ev 尺寸列）~~
+  
   为 DO 添加一个 Size 列，通过 Everything 获取文件和文件夹的大小。（只作参考用途，请使用 [IbDOpusExt](https://github.com/Chaoses-Ib/IbDOpusExt) 的尺寸列替代。）
 
 ## 重命名脚本
-- [PercentDecode](Rename%20Scripts/PercentDecode.js)（百分号解码）  
+- [PercentDecode](Rename%20Scripts/PercentDecode.js)（百分号解码）
+
   解码百分号编码（URL编码），例如将 `%E4%BD%A0%E5%A5%BD` 和 `%u4F60%u597D` 解码为 `你好`。 
-- [EncodingConvert](Rename%20Scripts/EncodingConvert.js)（编码转换）  
+
+- [EncodingConvert](Rename%20Scripts/EncodingConvert.js)（编码转换）
+
   主要用于修复文件名乱码，例如将 GBK 编码的 `嬻偺嫬奅 椉媀幃` 修复为 Shift-JIS 编码的 `空の境界 両儀式`。 
 
-  ![](Rename%20Scripts/images/EncodingConvert.zh-Hans.png)  
+  ![](Rename%20Scripts/images/EncodingConvert.zh-Hans.png)
+
   支持 UTF-8、GBK、Big5、Shift-JIS 和 EUC-KR 编码。
-- [繁体中文转简体](Rename%20Scripts/繁体中文转简体.js)  
+
+- [繁体中文转简体](Rename%20Scripts/繁体中文转简体.js)
+
   例如将 `邊緣行者` 转换为 `边缘行者`。
-- [简体中文转繁体](Rename%20Scripts/简体中文转繁体.js)  
+
+- [简体中文转繁体](Rename%20Scripts/简体中文转繁体.js)
+
   例如将 `边缘行者` 转换为 `邊緣行者`。
-- [中文数字转阿拉伯数字-WSQL](Rename%20Scripts/中文数字转阿拉伯数字-WSQL.vbs)  
+
+- [中文数字转阿拉伯数字-WSQL](Rename%20Scripts/中文数字转阿拉伯数字-WSQL.vbs)
+
   例如将 `一百二十三` 转换为 `123`。支持大写数字。
-- [阿拉伯数字转中文数字-WSQL](Rename%20Scripts/阿拉伯数字转中文数字-WSQL.vbs)  
+
+- [阿拉伯数字转中文数字-WSQL](Rename%20Scripts/阿拉伯数字转中文数字-WSQL.vbs)
+
   例如将 `123` 转换为 `一百二十三`。支持大写数字。
-- [阿拉伯数字转中文数字-无单位](Rename%20Scripts/阿拉伯数字转中文数字-无单位.js)  
+
+- [阿拉伯数字转中文数字-无单位](Rename%20Scripts/阿拉伯数字转中文数字-无单位.js)
+
   例如将 `123` 转换为 `一二三`。支持大写数字。
-- [中英混排加空格](Rename%20Scripts/中英混排加空格.js)  
+
+- [中英混排加空格](Rename%20Scripts/中英混排加空格.js)
+
   在汉字和英文单词之间添加空格，例如将 `你好world` 转换为 `你好 world`。
 
 ## 相关推荐
