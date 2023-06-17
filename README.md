@@ -96,7 +96,7 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
   e.g. `Speak "My Moon My Man"`
 
 ## Scripts
-To use a script (except for DialogJump), you need to download it and put it into `/dopusdata\Script AddIns`.
+To use a script, you need to download it and put it into `/dopusdata\Script AddIns` (except for DialogJump).
 
 - [DialogJump](Scripts/DialogJump.ahk)
 
@@ -116,7 +116,7 @@ To use a script (except for DialogJump), you need to download it and put it into
 
   This script requires a supporting executable `MaxViewerPane.exe`. You need to download the archive from [Releases](https://github.com/Chaoses-Ib/IbDOpusScripts/releases) and extract the folder next to the script (i.e. there should exist `/dopusdata\Script AddIns\MaxViewerPane\MaxViewerPane.exe`).
 
-  Button: [MaxViewerPane.dcf](Scripts/MaxViewerPane/MaxViewerPane.dcf)
+  Button: [MaxViewerPane.dcf](Scripts/MaxViewerPane/MaxViewerPane.cmd.dcf)
 
 - [ObjectViewers](Scripts/ObjectViewers)
 
@@ -135,6 +135,10 @@ To use a script (except for DialogJump), you need to download it and put it into
   You can also import [the toolbar](Scripts/SmartThumbnailSize/SmartThumbnailSize.cmd.dop):
 
   ![](Scripts/SmartThumbnailSize/images/toolbar.png)
+
+  Note that `SmartThumbnailSize` will only set the thumbnail size for the current file diaplay. This means that you can use it to set separate thumbnail sizes for each file display in a dual-display Lister:
+
+  ![](Scripts/SmartThumbnailSize/images/dual.png)
 
 - [TabColorizer](Scripts/TabColorizer/TabColorizer.js)
 

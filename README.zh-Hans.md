@@ -95,6 +95,8 @@
   例如：`说 "荒耶 所求为何"`
 
 ## 脚本
+要使用一个脚本，你需要将它下载到 `/dopusdata\Script AddIns`（除了 DialogJump）。
+
 - [DialogJump](Scripts/DialogJump.ahk)（对话框跳转）
 
   在文件对话框编辑框中按 Ctrl+G 跳转到 DOpus 最近激活的文件夹。Ctrl+G 无效时可以输入“//cur ”来触发。（如果没有 [AutoHotkey v2](https://www.autohotkey.com/v2/) 的话可以从 [Releases](https://github.com/Chaoses-Ib/IbDOpusScripts/releases) 下载可执行文件）
@@ -111,9 +113,9 @@
   --- | ---
   ![](Scripts/MaxViewerPane/images/before.png) | ![](Scripts/MaxViewerPane/images/after.png)
 
-  该脚本需要一个配套的可执行文件 `MaxViewerPane.exe`。你可以从 [Releases](https://github.com/Chaoses-Ib/IbDOpusScripts/releases) 下载压缩包，并将文件夹解压到脚本旁（即应该存在 `/dopusdata\Script AddIns\MaxViewerPane\MaxViewerPane.exe`）。
+  该脚本需要一个配套的可执行文件 `MaxViewerPane.exe`。你需要从 [Releases](https://github.com/Chaoses-Ib/IbDOpusScripts/releases) 下载压缩包，并将文件夹解压到脚本旁（即应该存在 `/dopusdata\Script AddIns\MaxViewerPane\MaxViewerPane.exe`）。
 
-  按钮：[MaxViewerPane.dcf](Scripts/MaxViewerPane/MaxViewerPane.dcf)
+  按钮：[MaxViewerPane.cmd.dcf](Scripts/MaxViewerPane/MaxViewerPane.cmd.dcf)
 
 - [ObjectViewers](Scripts/ObjectViewers)（查看脚本对象）
 
@@ -132,6 +134,10 @@
   你也可以导入[工具栏](Scripts/SmartThumbnailSize/SmartThumbnailSize.cmd.dop)：
 
   ![](Scripts/SmartThumbnailSize/images/toolbar.png)
+
+  注意，`SmartThumbnailSize` 仅会设置当前文件列表的缩略图尺寸。这意味着你可以用它来在一个双栏窗口中为每个文件列表分别设置不同的缩略图尺寸：
+
+  ![](Scripts/SmartThumbnailSize/images/dual.png)
 
 - [TabColorizer](Scripts/TabColorizer/TabColorizer.js)
 
