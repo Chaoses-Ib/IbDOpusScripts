@@ -1,4 +1,4 @@
-function OnInit(scriptInitData)
+﻿function OnInit(scriptInitData)
 {
     scriptInitData.name = "MaxViewerPane";
     scriptInitData.desc = DOpus.strings.Get('description');
