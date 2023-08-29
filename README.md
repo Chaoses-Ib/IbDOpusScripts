@@ -28,7 +28,6 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
 
   Paste files into every selected folder.
 
-
 - [系统管理-雨](Buttons/系统管理-雨.cmd.dcf)
 
   ![](Buttons/images/系统管理-雨.png)
@@ -45,17 +44,29 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
   Get the value of the specified column to `glob:$result`.
 
   For example:
-  ```cmd
-  // The syntax is the same as the "New name" in the Advanced Rename dialog
-  GetColumnValue "* {md5sum}"
-  Clipboard SET {$glob:$result}
-  @set glob:$result
-  ```
-  Corresponding result:
-  ```
-  .gitignore 3b121da4db64aa59864e9ed46fa68d0a
-  LICENSE.txt dda85d3253cbd75fd74cceb14c1d8b02
-  ```
+
+  - Copy files' names and MD5 to clipboard
+  
+    ```cmd
+    // The syntax is the same as the "New name" in the Advanced Rename dialog
+    GetColumnValue "* {md5sum}"
+    Clipboard SET {$glob:$result}
+    @set glob:$result
+    ```
+    Corresponding result:
+    ```
+    .gitignore 3b121da4db64aa59864e9ed46fa68d0a
+    LICENSE.txt dda85d3253cbd75fd74cceb14c1d8b02
+    ```
+  - Archive files with the name of the parent folder
+  
+    ```cmd
+    GetColumnValue "{parent}"
+    Copy ADDTOARCHIVE CREATEFOLDER="{$glob:$result}" HERE
+    @set glob:$result
+    ```
+  
+  `@set glob:$result` is used to clear the result. It is optional but recommended.
 
 - [Output](Commands/Output.ouc)
 

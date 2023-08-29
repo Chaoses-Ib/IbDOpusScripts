@@ -43,18 +43,30 @@
   
   获取指定列的值到 `glob:$result`。
 
-  例如：
-  ```cmd
-  // 语法与重命名对话框中的“新名称”相同
-  GetColumnValue "* {md5sum}"
-  Clipboard SET {$glob:$result}
-  @set glob:$result
-  ```
-  对应结果：
-  ```
-  .gitignore 3b121da4db64aa59864e9ed46fa68d0a
-  LICENSE.txt dda85d3253cbd75fd74cceb14c1d8b02
-  ```
+  例子：
+  - 复制文件的文件名和 MD5 到剪切板
+  
+    ```cmd
+    // 语法与重命名对话框中的“新名称”相同
+    GetColumnValue "* {md5sum}"
+    Clipboard SET {$glob:$result}
+    @set glob:$result
+    ```
+    对应结果：
+    ```
+    .gitignore 3b121da4db64aa59864e9ed46fa68d0a
+    LICENSE.txt dda85d3253cbd75fd74cceb14c1d8b02
+    ```
+
+  - 压缩文件，使用父文件夹作为压缩包名称
+  
+    ```cmd
+    GetColumnValue "{parent}"
+    Copy ADDTOARCHIVE CREATEFOLDER="{$glob:$result}" HERE
+    @set glob:$result
+    ```
+  
+  `@set glob:$result` 用于清除结果，可以省略，但是推荐使用。
 
 - [Output](Commands/Output.ouc)（输出）
 
