@@ -1,28 +1,28 @@
 <?xml version="1.0"?>
 <button backcol="none" display="icon" textcol="none">
 	<label>GetColumnValue</label>
-	<tip>Get the value of the specified column to glob:$result</tip>
+	<tip>Get the value of the specified column to glob:result</tip>
 	<template>COLUMN</template>
 	<icon1>#usercommand</icon1>
 	<function type="normal">
 		<instruction>// Author: @Chaoses-Ib</instruction>
-		<instruction>// Version: 220909.2</instruction>
+		<instruction>// Version: 231101</instruction>
 		<instruction>// Homepage: https://github.com/Chaoses-Ib/IbDOpusScripts</instruction>
 		<instruction />
 		<instruction>// @set can&apos;t set an empty variable</instruction>
-		<instruction>@set glob:$result</instruction>
+		<instruction>@set glob:result</instruction>
 		<instruction>// SCRIPTARG doesn&apos;t work</instruction>
 		<instruction>Rename PATTERN * TO &quot;&amp;COLUMN&amp;&quot;</instruction>
 		<instruction>@script:jscript</instruction>
 		<instruction>function OnGetNewName(getNewNameData)</instruction>
 		<instruction>{</instruction>
-		<instruction>    if (!DOpus.vars.Exists(&quot;$result&quot;))</instruction>
-		<instruction>        DOpus.vars.Set(&quot;$result&quot;, getNewNameData.newname);</instruction>
+		<instruction>    if (!DOpus.vars.Exists(&quot;result&quot;))</instruction>
+		<instruction>        DOpus.vars.Set(&quot;result&quot;, getNewNameData.newname);</instruction>
 		<instruction>    else</instruction>
-		<instruction>        DOpus.vars.Set(&quot;$result&quot;, DOpus.vars.Get(&quot;$result&quot;) + &apos;\n&apos; + getNewNameData.newname);</instruction>
+		<instruction>        DOpus.vars.Set(&quot;result&quot;, DOpus.vars.Get(&quot;result&quot;) + &apos;\n&apos; + getNewNameData.newname);</instruction>
 		<instruction>    return true;  // prevent rename</instruction>
 		<instruction>}</instruction>
-		<instruction>// Access the result by `{$glob:$result}`</instruction>
-		<instruction>// Delete the result by `@set glob:$result`</instruction>
+		<instruction>// Access the result by `{$glob:result}`</instruction>
+		<instruction>// Delete the result by `@set glob:result`</instruction>
 	</function>
 </button>

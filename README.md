@@ -41,7 +41,7 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
 ## Commands
 - [GetColumnValue](Commands/GetColumnValue.ouc)
 
-  Get the value of the specified column to `glob:$result`.
+  Get the value of the specified column to `glob:result`.
 
   For example:
 
@@ -50,8 +50,8 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
     ```cmd
     // The syntax is the same as the "New name" in the Advanced Rename dialog
     GetColumnValue "* {md5sum}"
-    Clipboard SET {$glob:$result}
-    @set glob:$result
+    Clipboard SET {$glob:result}
+    @set glob:result
     ```
     Corresponding result:
     ```
@@ -62,11 +62,11 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
   
     ```cmd
     GetColumnValue "{parent}"
-    Copy ADDTOARCHIVE CREATEFOLDER="{$glob:$result}" HERE
-    @set glob:$result
+    Copy ADDTOARCHIVE CREATEFOLDER="{$glob:result}" HERE
+    @set glob:result
     ```
   
-  `@set glob:$result` is used to clear the result. It is optional but recommended.
+  `@set glob:result` is used to clear the result. It is optional but recommended.
 
 - [Output](Commands/Output.ouc)
 

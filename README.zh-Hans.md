@@ -41,7 +41,7 @@
 ## 命令
 - [GetColumnValue](Commands/GetColumnValue.ouc)（获取列值）
   
-  获取指定列的值到 `glob:$result`。
+  获取指定列的值到 `glob:result`。
 
   例子：
   - 复制文件的文件名和 MD5 到剪切板
@@ -49,8 +49,8 @@
     ```cmd
     // 语法与重命名对话框中的“新名称”相同
     GetColumnValue "* {md5sum}"
-    Clipboard SET {$glob:$result}
-    @set glob:$result
+    Clipboard SET {$glob:result}
+    @set glob:result
     ```
     对应结果：
     ```
@@ -62,11 +62,11 @@
   
     ```cmd
     GetColumnValue "{parent}"
-    Copy ADDTOARCHIVE CREATEFOLDER="{$glob:$result}" HERE
-    @set glob:$result
+    Copy ADDTOARCHIVE CREATEFOLDER="{$glob:result}" HERE
+    @set glob:result
     ```
   
-  `@set glob:$result` 用于清除结果，可以省略，但是推荐使用。
+  `@set glob:result` 用于清除结果，可以省略，但是推荐使用。
 
 - [Output](Commands/Output.ouc)（输出）
 
