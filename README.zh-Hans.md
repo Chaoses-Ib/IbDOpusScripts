@@ -34,9 +34,9 @@
 
   作者：雨浪飘零
 
-- ~~[CloseTabOrLister](Buttons/CloseTabOrLister.js)（关闭标签页）~~
+- ~~[CloseTabOrLister](Buttons/CloseTabOrLister.js)（关闭标签页）~~（DOpus v12.2.6 已内置）
   
-  关闭当前标签页，如果只剩一个，就直接关闭窗口。（只作参考用途，更好的实现方式是勾选 `配置/文件夹标签/选项` 下的“关闭最后一个标签时同时关闭窗口”。）
+  关闭当前标签页，如果只剩一个，就直接关闭窗口。（只作参考用途。从 DOpus v12.2.6 开始，可以通过勾选 `配置/文件夹标签/选项` 下的“关闭最后一个标签时同时关闭窗口”来实现该功能。）
 
 ## 命令
 - [GetColumnValue](Commands/GetColumnValue.ouc)（获取列值）
@@ -159,7 +159,7 @@
   --- | ---
   ![](Scripts/TabColorizer/images/before.png) | ![](Scripts/TabColorizer/images/after.png)
 
-- ~~[SizeColByEverything](Scripts/SizeColByEverything/README.zh-Hans.md)（Ev 尺寸列）~~
+- ~~[SizeColByEverything](Scripts/SizeColByEverything/README.zh-Hans.md)（Ev 尺寸列）~~（DOpus v13 已内置）
   
   为 DO 添加一个 Size 列，通过 Everything 获取文件和文件夹的大小。（只作参考用途，请使用 [IbDOpusExt](https://github.com/Chaoses-Ib/IbDOpusExt) 的尺寸列替代。）
 

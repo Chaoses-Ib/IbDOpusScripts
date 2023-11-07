@@ -34,9 +34,9 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
 
   作者：雨浪飘零
 
-- ~~[CloseTabOrLister](Buttons/CloseTabOrLister.js)~~
+- ~~[CloseTabOrLister](Buttons/CloseTabOrLister.js)~~ (built-in since DOpus v12.2.6)
   
-  If there's only one tab, close the lister, otherwise close current tab. (This script is for reference only. A better way to implement it is to turn on "Lister closes when last tab closes" under `Preferences/Folder Tabs/Options`.)
+  If there's only one tab, close the lister, otherwise close current tab. (This script is for reference only. Starting with DOpus v12.2.6, this feature can be implemented by turning on "Lister closes when last tab closes" under `Preferences/Folder Tabs/Options`.)
 
 ## Commands
 - [GetColumnValue](Commands/GetColumnValue.ouc)
@@ -159,7 +159,8 @@ To use a script, you need to download it and put it into `/dopusdata\Script AddI
   --- | ---
   ![](Scripts/TabColorizer/images/before.png) | ![](Scripts/TabColorizer/images/after.png)
 
-- ~~[SizeColByEverything](Scripts/SizeColByEverything/README.zh-Hans.md)~~  
+- ~~[SizeColByEverything](Scripts/SizeColByEverything/README.zh-Hans.md)~~ (built-in since DOpus v13)
+  
   Add a size column which retrieves sizes of files and folders from Everything. (This script is for reference only. Use [IbDOpusExt](https://github.com/Chaoses-Ib/IbDOpusExt)'s Size column instead.)
 
 ## Rename Scripts

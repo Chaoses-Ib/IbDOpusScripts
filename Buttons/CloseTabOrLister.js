@@ -1,7 +1,7 @@
 //CloseTabOrLister
-//Description: If there's only one tab, close the lister, otherwise close current tab. (This script is for reference only. A better way to implement it is to turn on "Lister closes when last tab closes" under Preferences/Folder Tabs/Options.)
+//Description: If there's only one tab, close the lister, otherwise close current tab. (This script is for reference only. Starting with DOpus v12.2.6, one can implement this feature by turning on "Lister closes when last tab closes" under `Preferences/Folder Tabs/Options`.)
 //Author: Chaoses Ib
-//Version: 210729
+//Version: 231107
 //Git: https://github.com/Chaoses-Ib/IbDOpusScripts
 
 function OnClick(clickData)
