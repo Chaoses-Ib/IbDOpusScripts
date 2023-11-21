@@ -127,7 +127,7 @@
 
   该脚本需要一个配套的可执行文件 `MaxViewerPane.exe`。你需要从 [Releases](https://github.com/Chaoses-Ib/IbDOpusScripts/releases) 下载压缩包，并将文件夹解压到脚本旁（即应该存在 `/dopusdata\Script AddIns\MaxViewerPane\MaxViewerPane.exe`）。
 
-  按钮：[MaxViewerPane.cmd.dcf](Scripts/MaxViewerPane/MaxViewerPane.cmd.dcf)
+  按钮：[MaxViewerPane.dcf](Scripts/MaxViewerPane/MaxViewerPane.cmd.dcf)
 
 - [ObjectViewers](Scripts/ObjectViewers)（查看脚本对象）
 
@@ -167,6 +167,10 @@
 - [PercentDecode](Rename%20Scripts/PercentDecode.js)（百分号解码）
 
   解码百分号编码（URL编码），例如将 `%E4%BD%A0%E5%A5%BD` 和 `%u4F60%u597D` 解码为 `你好`。 
+
+- [RandomString](Rename%20Scripts/RandomString.js)（随机文本）
+
+  替换新名称中的 `{randomString}` 为随机文本。
 
 - [EncodingConvert](Rename%20Scripts/EncodingConvert.js)（编码转换）
 

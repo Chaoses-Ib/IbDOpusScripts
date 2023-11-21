@@ -168,6 +168,10 @@ To use a script, you need to download it and put it into `/dopusdata\Script AddI
 
   Decode percent-encoding (URL encoding). For example, `%E4%BD%A0%E5%A5%BD` and `%u4F60%u597D` can be decoded to `你好`.
 
+- [RandomString](Rename%20Scripts/RandomString.js)
+
+  Replace `{randomString}` in the new name to random strings.
+
 - [EncodingConvert](Rename%20Scripts/EncodingConvert.js)
 
   Mainly used to fix the character encoding of filenames. For example, you can fix the GBK-encoded `嬻偺嫬奅 椉媀幃` to Shift-JIS-encoded `空の境界 両儀式`.
