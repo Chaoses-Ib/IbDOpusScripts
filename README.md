@@ -164,7 +164,7 @@ To use a script, you need to download it and put it into `/dopusdata\Script AddI
   Add a size column which retrieves sizes of files and folders from Everything. (This script is for reference only. Use [IbDOpusExt](https://github.com/Chaoses-Ib/IbDOpusExt)'s Size column instead.)
 
 Non-DOpus scripts:
-- [OpenFolderAndSelectItemsEx](Scripts/OpenFolderAndSelectItemsEx/OpenFolderAndSelectItemsEx.vbs)
+- [OpenFolderAndSelectItemsEx](Scripts/OpenFolderAndSelectItemsEx)
 
   Given a file path, open its parent folder (or Git root) and show the file in VS Code.
 
