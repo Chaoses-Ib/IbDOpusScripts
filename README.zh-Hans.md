@@ -172,6 +172,8 @@
 
   要将文件类型关联到这个脚本，需要将它们的 `open` 动作改为 `wscript "...\OpenFileInWorkspace.vbs" "%1"`，其中 `...\OpenFileInWorkspace.vbs` 应为 `OpenFileInWorkspace.vbs` 的绝对路径。
 
+  也可以与 [ObsidianShell](https://github.com/Chaoses-Ib/ObsidianShell) 结合使用，在打开笔记时先尝试在 Obsidian 中打开，再回落到 VS Code 工作区。
+
 ## 重命名脚本
 - [PercentDecode](Rename%20Scripts/PercentDecode.js)（百分号解码）
 

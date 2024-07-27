@@ -172,6 +172,8 @@ Non-DOpus scripts:
 
   To associate file types with this script, change their `open` action to `wscript "...\OpenFileInWorkspace.vbs" "%1"`, where `...\OpenFileInWorkspace.vbs` should be the absolute path to `OpenFileInWorkspace.vbs`.
 
+  Can also be combined with [ObsidianShell](https://github.com/Chaoses-Ib/ObsidianShell) to try to open notes in Obsidian first and then fallback to VS Code workspace.
+
 ## Rename Scripts
 - [PercentDecode](Rename%20Scripts/PercentDecode.js)
 
