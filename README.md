@@ -168,6 +168,8 @@ Non-DOpus scripts:
 
   Given a file path, open its parent folder (or Git root) and show the file in VS Code.
 
+  [Download](https://github.com/Chaoses-Ib/IbDOpusScripts/releases)
+
   To associate file types with this script, change their `open` action to `wscript "...\OpenFileInWorkspace.vbs" "%1"`, where `...\OpenFileInWorkspace.vbs` should be the absolute path to `OpenFileInWorkspace.vbs`.
 
 ## Rename Scripts
