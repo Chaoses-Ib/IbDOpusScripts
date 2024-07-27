@@ -163,6 +163,13 @@
   
   为 DO 添加一个 Size 列，通过 Everything 获取文件和文件夹的大小。（只作参考用途，请使用 [IbDOpusExt](https://github.com/Chaoses-Ib/IbDOpusExt) 的尺寸列替代。）
 
+Non-DOpus scripts:
+- [OpenFolderAndSelectItemsEx](Scripts/OpenFolderAndSelectItemsEx/OpenFolderAndSelectItemsEx.vbs)
+
+  Given a file path, open its parent folder (or Git root) and show the file in VS Code.
+
+  To associate file types with this script, change their `open` action to `wscript "...\OpenFolderAndSelectItemsEx.vbs" "%1"`, where `...\OpenFolderAndSelectItemsEx.vbs` should be the absolute path to `OpenFolderAndSelectItemsEx.vbs`.
+
 ## 重命名脚本
 - [PercentDecode](Rename%20Scripts/PercentDecode.js)（百分号解码）
 
