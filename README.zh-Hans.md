@@ -7,6 +7,7 @@
 - [SmartExtract](Buttons/SmartExtract.js)（智能解压）
 
   对于选中的压缩包，如果根目录内文件多于一个，就解压到子文件夹；如果只有一个，就直接解压到当前目录。
+  - 支持多选
   - 支持选中解压出的文件/目录
 
 - [Everything 搜索](Buttons/EverythingSearch.zh-Hans.cmd.dcf)
