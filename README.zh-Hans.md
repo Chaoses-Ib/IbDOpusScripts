@@ -4,7 +4,7 @@
 一些 [Directory Opus](https://github.com/Chaoses-Ib/DirectoryOpus) 的脚本。
 
 ## 按钮
-- [AutoExtract](Buttons/AutoExtract.js)（自动解压）
+- [SmartExtract](Buttons/SmartExtract.js)（智能解压）
 
   对于选中的压缩包，如果根目录内文件多于一个，就解压到子文件夹；如果只有一个，就直接解压到当前目录。
 

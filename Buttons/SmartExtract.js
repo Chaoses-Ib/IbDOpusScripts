@@ -1,7 +1,7 @@
 @script jscript
-// AutoExtract
+// SmartExtract
 // Description: Extract selected archive to subfolder if there's more than one file under the root path, otherwise (only one file) extract it directly.
-// Version: 221130
+// Version: v0.2.0
 // Author: @Chaoses-Ib, @Sanhuaitang
 // Homepage: https://github.com/Chaoses-Ib/IbDOpusScripts
 
