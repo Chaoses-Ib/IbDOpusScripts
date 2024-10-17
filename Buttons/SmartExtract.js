@@ -1,7 +1,7 @@
 @script jscript
 // SmartExtract
 // Description: Extract selected archive to subfolder if there's more than one file under the root path, otherwise (only one file) extract it directly.
-// Version: v0.3.0
+// Version: v0.3.1
 // Author: @Chaoses-Ib, @Sanhuaitang
 // Homepage: https://github.com/Chaoses-Ib/IbDOpusScripts
 
@@ -26,14 +26,14 @@ function OnClick(clickData)
         var count = 0;
         var firstName;
         for(var zipEnum = fsutil.ReadDir(item.RealPath); !zipEnum.complete;) {
-            var item = zipEnum.Next;
+            var zipItem = zipEnum.Next;
             if (count == 0) {
-                firstName = item.name;
+                firstName = zipItem.name;
             }
             if (++count >= 2)
                 break;
         }
-        //DOpus.Output(count);
+        // DOpus.Output(count);
         if (count == 0) {
             continue;
         }
@@ -43,7 +43,7 @@ function OnClick(clickData)
 
         var c;
         var name;
-        if(count < 2) {
+        if (count < 2) {
             c = "Copy EXTRACT HERE";
             name = firstName;
         }
@@ -51,6 +51,7 @@ function OnClick(clickData)
             c = "Copy EXTRACT=sub HERE";
             name = item.name_stem;
         }
+        // DOpus.Output(name);
 
         if (selectExtractedFiles) {
             // c += " AUTOSELECT=yes";
