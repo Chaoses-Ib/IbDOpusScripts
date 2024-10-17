@@ -7,6 +7,7 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
 - [SmartExtract](Buttons/SmartExtract.js)
 
   Extract selected archive to subfolder if there's more than one file under the root path, otherwise (only one file) extract it directly.
+  - Support selecting extracted file/directory after extraction.
 
 - [Everything 搜索](Buttons/EverythingSearch.zh-Hans.cmd.dcf)
   
