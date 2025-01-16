@@ -2,7 +2,7 @@ function OnInit(initData) {
     initData.name = 'ClipEdit';
     // initData.version = '2023-06-14';
     // initData.url = 'https://resource.dopus.com/t/clipedit-modify-the-clipboard/44636';
-    initData.version = '0.2.0';
+    initData.version = '0.2.1';
     initData.url = 'https://github.com/Chaoses-Ib/IbDOpusScripts';
     initData.desc = 'Modify the clipboard';
     initData.default_enable = true;
@@ -92,24 +92,25 @@ function OnClipEdit(scriptCmdData) {
     }
 
     function EditEnvvar() {
-        vec.push_back('%allusersprofile%');
-        vec.push_back('%appdata%');
-        vec.push_back('%commonprogramfiles%');
-        vec.push_back('%commonprogramfiles(x86)%');
-        vec.push_back('%comspec%');
-        vec.push_back('%driverdata%');
-        vec.push_back('%localappdata%');
-        vec.push_back('%onedrive%');
-        // vec.push_back('%onedriveconsumer%');
-        vec.push_back('%programdata%');
-        vec.push_back('%programfiles%');
-        vec.push_back('%programfiles(x86)%');
-        // vec.push_back('%programw6432%');
-        vec.push_back('%public%');
-        vec.push_back('%systemroot%');
-        vec.push_back('%temp%');
-        // vec.push_back('%tmp%');
-        vec.push_back('%userprofile%');
+        // C:\ProgramData
+        vec.push_back('%ALLUSERSPROFILE%');
+        vec.push_back('%APPDATA%');
+        vec.push_back('%CommonProgramFiles%');
+        vec.push_back('%CommonProgramFiles(x86)%');
+        vec.push_back('%ComSpec%');
+        vec.push_back('%DriverData%');
+        vec.push_back('%LOCALAPPDATA%');
+        vec.push_back('%OneDrive%');
+        // vec.push_back('%OneDriveConsumer%');
+        vec.push_back('%ProgramData%');
+        vec.push_back('%ProgramFiles%');
+        vec.push_back('%ProgramFiles(x86)%');
+        // vec.push_back('%ProgramW6432%');
+        vec.push_back('%PUBLIC%');
+        vec.push_back('%SystemRoot%');
+        vec.push_back('%TEMP%');
+        // vec.push_back('%TMP%');
+        vec.push_back('%USERPROFILE%');
         vec.push_back('%windir%');
 
         BubbleSort(''); // bubble sort variables by *path* length to achieve maximum replacement
@@ -140,24 +141,24 @@ function OnClipEdit(scriptCmdData) {
     }
 
     function EditEnvvarExpand() {
-        vec.push_back('%allusersprofile%');
-        vec.push_back('%appdata%');
-        vec.push_back('%commonprogramfiles%');
-        vec.push_back('%commonprogramfiles(x86)%');
-        vec.push_back('%comspec%');
-        vec.push_back('%driverdata%');
-        vec.push_back('%localappdata%');
-        vec.push_back('%onedrive%');
-        vec.push_back('%onedriveconsumer%');
-        vec.push_back('%programdata%');
-        vec.push_back('%programfiles%');
-        vec.push_back('%programfiles(x86)%');
-        vec.push_back('%programw6432%');
-        vec.push_back('%public%');
-        vec.push_back('%systemroot%');
-        vec.push_back('%temp%');
-        vec.push_back('%tmp%');
-        vec.push_back('%userprofile%');
+        vec.push_back('%ALLUSERSPROFILE%');
+        vec.push_back('%APPDATA%');
+        vec.push_back('%CommonProgramFiles%');
+        vec.push_back('%CommonProgramFiles(x86)%');
+        vec.push_back('%ComSpec%');
+        vec.push_back('%DriverData%');
+        vec.push_back('%LOCALAPPDATA%');
+        vec.push_back('%OneDrive%');
+        vec.push_back('%OneDriveConsumer%');
+        vec.push_back('%ProgramData%');
+        vec.push_back('%ProgramFiles%');
+        vec.push_back('%ProgramFiles(x86)%');
+        vec.push_back('%ProgramW6432%');
+        vec.push_back('%PUBLIC%');
+        vec.push_back('%SystemRoot%');
+        vec.push_back('%TEMP%');
+        vec.push_back('%TMP%');
+        vec.push_back('%USERPROFILE%');
         vec.push_back('%windir%');
 
         // BubbleSort(''); // sorting not needed here
