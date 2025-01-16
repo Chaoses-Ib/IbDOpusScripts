@@ -43,7 +43,7 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
 ## Commands
 - [ClipEdit](Commands/ClipEdit.js)
 
-  A forked version of [ClipEdit](https://resource.dopus.com/t/clipedit-modify-the-clipboard/44636?u=chaoses-ib) to fix some bugs.
+  A forked version of [ClipEdit](https://resource.dopus.com/t/clipedit-modify-the-clipboard/44636?u=chaoses-ib) to fix some problems.
 
 - [GetColumnValue](Commands/GetColumnValue.ouc)
 

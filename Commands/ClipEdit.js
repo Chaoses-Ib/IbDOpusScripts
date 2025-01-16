@@ -21,7 +21,7 @@ function OnAddCommands(addCmdData) {
         'envvarexpand/s,' +
         'generic/s,' +
         'isodate/s,' +
-        'nolog/s';
+        'log/s';
     cmd.hide = false;
     cmd.icon = 'script';
 }
@@ -196,8 +196,9 @@ function OnClipEdit(scriptCmdData) {
     }
 
     function Log(str) {
-        if (args.nolog) return;
-        cmd.RunCommand('Set UTILITY=otherlog');
-        DOpus.Output('\n' + str);
+        if (args.log) {
+            cmd.RunCommand('Set UTILITY=otherlog');
+            DOpus.Output('\n' + str);
+        }
     }
 }
