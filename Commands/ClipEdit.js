@@ -2,7 +2,7 @@ function OnInit(initData) {
     initData.name = 'ClipEdit';
     // initData.version = '2023-06-14';
     // initData.url = 'https://resource.dopus.com/t/clipedit-modify-the-clipboard/44636';
-    initData.version = '0.1.1';
+    initData.version = '0.2.0';
     initData.url = 'https://github.com/Chaoses-Ib/IbDOpusScripts';
     initData.desc = 'Modify the clipboard';
     initData.default_enable = true;
@@ -55,6 +55,15 @@ function OnClipEdit(scriptCmdData) {
     function EditAlias() {
         for (var e = new Enumerator(DOpus.aliases); !e.atEnd(); e.moveNext()) {
             var item = e.item();
+
+            // Filter out long aliases
+            if (item == 'homeroot'  // C:\
+                || item == 'programfiles'  // C:\Program Files
+                || item == 'programfilesx86'  // C:\Program Files (x86)
+                || item == 'commonappdata'  // C:\ProgramData
+                || item == 'windows'  // C:\Windows
+                || item == 'libraries'  // lib://
+            ) continue;
 
             // alias.path is undefined for `defaultright` and `lastright`
             if (item.path === undefined || item.path.drive == 0) continue; // we skip /trash etc.
