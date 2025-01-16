@@ -41,6 +41,10 @@ Some scripts for [Directory Opus](https://www.gpsoft.com.au/) ([中文介绍](ht
   If there's only one tab, close the lister, otherwise close current tab. (This script is for reference only. Starting with DOpus v12.2.6, this feature can be implemented by turning on "Lister closes when last tab closes" under `Preferences/Folder Tabs/Options`.)
 
 ## Commands
+- [ClipEdit](Commands/ClipEdit.js)
+
+  A forked version of [ClipEdit](https://resource.dopus.com/t/clipedit-modify-the-clipboard/44636?u=chaoses-ib) to fix some bugs.
+
 - [GetColumnValue](Commands/GetColumnValue.ouc)
 
   Get the value of the specified column to `glob:result`.

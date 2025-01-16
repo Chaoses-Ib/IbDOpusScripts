@@ -41,6 +41,10 @@
   关闭当前标签页，如果只剩一个，就直接关闭窗口。（只作参考用途。从 DOpus v12.2.6 开始，可以通过勾选 `配置/文件夹标签/选项` 下的“关闭最后一个标签时同时关闭窗口”来实现该功能。）
 
 ## 命令
+- [ClipEdit](Commands/ClipEdit.js)
+
+  [ClipEdit](https://resource.dopus.com/t/clipedit-modify-the-clipboard/44636?u=chaoses-ib) 的修改版，修复了一些问题。
+
 - [GetColumnValue](Commands/GetColumnValue.ouc)（获取列值）
   
   获取指定列的值到 `glob:result`。

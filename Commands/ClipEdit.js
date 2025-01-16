@@ -1,10 +1,13 @@
 function OnInit(initData) {
     initData.name = 'ClipEdit';
-    initData.version = '2023-06-14';
-    initData.url = 'https://resource.dopus.com/t/clipedit-modify-the-clipboard/44636';
+    // initData.version = '2023-06-14';
+    // initData.url = 'https://resource.dopus.com/t/clipedit-modify-the-clipboard/44636';
+    initData.version = '0.1.1';
+    initData.url = 'https://github.com/Chaoses-Ib/IbDOpusScripts';
     initData.desc = 'Modify the clipboard';
     initData.default_enable = true;
     initData.min_version = '12.0';
+    initData.copyright = "lxp, Chaoses-Ib";
 }
 
 function OnAddCommands(addCmdData) {
@@ -53,8 +56,8 @@ function OnClipEdit(scriptCmdData) {
         for (var e = new Enumerator(DOpus.aliases); !e.atEnd(); e.moveNext()) {
             var item = e.item();
 
-			DOpus.Output(item);
-            if (item.path.drive == 0) continue; // we skip /trash etc.
+            // alias.path is undefined for `defaultright` and `lastright`
+            if (item.path === undefined || item.path.drive == 0) continue; // we skip /trash etc.
             if (String(item) == 'altstartup') continue;
             if (String(item) == 'commonaltstartup') continue;
             if (String(item) == 'commonfavorites') continue;
